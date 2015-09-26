@@ -10,7 +10,7 @@ import java.util.Map;
 public class Predicate {
 
     public enum Operator {
-        DEFAULT("Default", 0) {
+        DEFAULT("  ", 0) {
             @Override
             ArrayList apply(Map<String, Object> request, String key, String value, ArrayList response) {
                 response.add(request);
@@ -29,9 +29,9 @@ public class Predicate {
         GREATER_THAN(">", 2) {
             @Override
             ArrayList apply(Map<String, Object> request, String key, String value, ArrayList response) {
-                int valueInt = Generic.getIntValue((String) request.get(key));
-                int predicateInt = Generic.getIntValue(value);
-                if (valueInt > predicateInt) {
+                int valueInt = Generic.getIntValue((String) request.get(key), -1);
+                int predicateInt = Generic.getIntValue(value, -1);
+                if ((valueInt > predicateInt) && (valueInt > -1)) {
                     response.add(request);
                 }
                 return response;
@@ -40,9 +40,9 @@ public class Predicate {
         LESSER_THAN("<", 3) {
             @Override
             ArrayList apply(Map<String, Object> request, String key, String value, ArrayList response) {
-                int valueInt = Generic.getIntValue((String) request.get(key));
-                int predicateInt = Generic.getIntValue(value);
-                if (valueInt < predicateInt) {
+                int valueInt = Generic.getIntValue((String) request.get(key), -1);
+                int predicateInt = Generic.getIntValue(value, -1);
+                if ((valueInt < predicateInt) && (valueInt > -1)) {
                     response.add(request);
                 }
                 return response;
@@ -83,41 +83,38 @@ public class Predicate {
             return Operator.DEFAULT;
         }
 
-        public boolean check(String predicate) {
+        public void check(String predicate) {
             if (predicate.contains(getOperator())) {
-                return true;
+                List<String> predicateList = Arrays.asList(predicate.split(getOperator()));
+                predicateKey = predicateList.get(0);
+                predicateValue = predicateList.get(1);
+                Predicate.operation = getId();
             }
-            return false;
         }
 
         abstract ArrayList apply(Map<String, Object> request, String key, String value, ArrayList response);
+
+        ArrayList apply(Object request, ArrayList response) {
+            Map<String, Object> itemMap = (Map<String, Object>) request;
+            if (itemMap.containsKey(predicateKey)) {
+                apply(itemMap, predicateKey, predicateValue, response);
+            }
+            return response;
+        }
     }
 
     private static int operation = 0;
+    private static String predicateKey = "";
+    private static String predicateValue = "";
 
     public static Object process(Object map, String predicate) {
 
-        for (Operator operator : Operator.values()) {
-            if (operator.check(predicate)) {
-                operation = operator.getId();
-                break;
-            }
-        }
-
-        List<String> predicateList = Arrays.asList(predicate.split(Operator.getOperatorById(operation).getOperator()));
-        String predicateKey = predicateList.get(0);
-        String predicateValue = predicateList.get(1);
+        for (Operator operator : Operator.values()) operator.check(predicate);
 
         if (map instanceof ArrayList) {
             ArrayList request = (ArrayList) map;
             ArrayList response = new ArrayList();
-
-            for (Object item : request) {
-                Map<String, Object> itemMap = (Map<String, Object>) item;
-                if (itemMap.containsKey(predicateKey)) {
-                    Operator.getOperatorById(operation).apply(itemMap, predicateKey, predicateValue, response);
-                }
-            }
+            for (Object item : request) Operator.getOperatorById(operation).apply(item, response);
             return response;
         }
 
