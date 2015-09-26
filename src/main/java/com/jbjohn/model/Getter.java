@@ -51,7 +51,6 @@ public class Getter {
             }
             return response.get(0);
         }
-        System.out.println("no in any" + map.getClass().getName());
         return map;
     }
 
