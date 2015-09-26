@@ -51,4 +51,12 @@ public class MapUtilParseTest {
         int result = Integer.parseInt(MapUtil.get(map, "$.sports-content.sports-event.team.[0].team-stats.@score").toString());
         Assert.assertEquals(expected, result);
     }
+
+    @Test
+    public void testParseWildCardMultiple() throws Exception {
+        int expected = 2;
+        MapUtil.parse(map, "$.sports-content.sports-event.team.[*].[*].[*]", Caster.Type.INTEGER);
+        int result = Integer.parseInt(MapUtil.get(map, "$.sports-content.sports-event.team.[0].team-stats.@score").toString());
+        Assert.assertEquals(expected, result);
+    }
 }
