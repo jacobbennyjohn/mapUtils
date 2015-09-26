@@ -23,7 +23,7 @@ public class MapUtil {
         try {
             response = Setter.setByPath(map, key, value);
         } catch (Exception e) {
-            System.out.println(e);
+            e.printStackTrace();
         }
         return response;
     }
@@ -33,7 +33,7 @@ public class MapUtil {
         try {
             response = Caster.setByPath(map, key, type);
         } catch (Exception e) {
-            System.out.println(e);
+            e.printStackTrace();
         }
         return response;
     }

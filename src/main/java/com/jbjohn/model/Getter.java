@@ -37,8 +37,8 @@ public class Getter {
         if (!predicate.equals("")) {
             return Predicate.process(map, predicate);
         }
-        if (key.matches("^-?\\d+$")) {
-            int index = Integer.parseInt(key);
+        int index = Generic.getIntValue(key, -1);
+        if (index > -1) {
             return map.get(index);
         }
         ArrayList response = new ArrayList();

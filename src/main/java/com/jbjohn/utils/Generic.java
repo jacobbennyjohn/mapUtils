@@ -49,10 +49,14 @@ public class Generic {
         return predicate;
     }
 
-    public static int getIntValue(String string) {
+    public static int getIntValue(String string, int defaultValue) {
         if (string.matches("^-?\\d+$")) {
             return Integer.parseInt(string);
         }
-        return 0;
+        return defaultValue;
+    }
+
+    public static int getIntValue(String string) {
+        return getIntValue(string, 0);
     }
 }
