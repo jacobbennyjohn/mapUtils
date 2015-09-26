@@ -48,4 +48,11 @@ public class Generic {
         }
         return predicate;
     }
+
+    public static int getIntValue(String string) {
+        if (string.matches("^-?\\d+$")) {
+            return Integer.parseInt(string);
+        }
+        return 0;
+    }
 }

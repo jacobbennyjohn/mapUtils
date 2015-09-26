@@ -13,7 +13,7 @@ public class MapUtil {
         try {
             response = Getter.searchByPath(map, key);
         } catch (Exception e) {
-            System.out.println(e);
+            e.printStackTrace();
         }
         return response;
     }

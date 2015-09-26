@@ -37,7 +37,7 @@ public class MapUtilGetTest {
     @Test
     public void testGetPredicate() throws Exception {
         String expected = "129";
-        String result = (String) MapUtil.get(map, "$.sports-content.sports-metadata.sports-content-codes.sports-content-code.[?@code-type=tournament].@code-key.[0]");
+        String result = (String) MapUtil.get(map, "$.sports-content.sports-metadata.sports-content-codes.sports-content-code.[?@code-type==tournament].@code-key.[0]");
         Assert.assertEquals(expected, result);
     }
 

@@ -1,9 +1,9 @@
 package com.jbjohn.model;
 
 import com.jbjohn.utils.Generic;
+import com.jbjohn.utils.Predicate;
 
 import java.util.*;
-
 /**
  */
 public class Getter {
@@ -35,7 +35,7 @@ public class Getter {
             return map;
         }
         if (!predicate.equals("")) {
-            return processPredicate(map, predicate);
+            return Predicate.process(map, predicate);
         }
         if (key.matches("^-?\\d+$")) {
             int index = Integer.parseInt(key);
@@ -69,80 +69,9 @@ public class Getter {
             map = search(map, key);
             path = Generic.newKey(stringList);
         } else {
-            path = Generic.trimPath(path);
+            path = Generic.trimKey(path);
             return search(map, path);
         }
         return searchByPath(map, path);
-    }
-
-    public static Object processPredicate(Object map, String predicate) {
-
-        int operation = 0;
-        String predicateKey = "";
-        String predicateValue = "";
-
-        if (predicate.contains("==")) {
-            operation = 1;
-            List<String> predicateList = Arrays.asList(predicate.split("=="));
-            predicateKey = predicateList.get(0);
-            predicateValue = predicateList.get(1);
-        } else if (predicate.contains(">")) {
-            operation = 2;
-            List<String> predicateList = Arrays.asList(predicate.split(">"));
-            predicateKey = predicateList.get(0);
-            predicateValue = predicateList.get(1);
-        } else if (predicate.contains("<")) {
-            operation = 3;
-            List<String> predicateList = Arrays.asList(predicate.split("<"));
-            predicateKey = predicateList.get(0);
-            predicateValue = predicateList.get(1);
-        } else if (predicate.contains("=")) {
-            operation = 1;
-            List<String> predicateList = Arrays.asList(predicate.split("="));
-            predicateKey = predicateList.get(0);
-            predicateValue = predicateList.get(1);
-        }
-
-        if (map instanceof ArrayList) {
-            ArrayList request = (ArrayList) map;
-            ArrayList response = new ArrayList();
-
-            for (Object item : request) {
-                Map<String, Object> itemMap = (Map<String, Object>) item;
-                if (itemMap.containsKey(predicateKey)) {
-
-                    int valueInt = 0;
-                    int predicateInt = 0;
-                    if (((String) itemMap.get(predicateKey)).matches("^-?\\d+$") && predicateValue.matches("^-?\\d+$")) {
-                        valueInt = Integer.parseInt((String) itemMap.get(predicateKey));
-                        predicateInt = Integer.parseInt(predicateValue);
-                    }
-
-                    switch (operation) {
-                        case 1:
-                            if (itemMap.get(predicateKey).equals(predicateValue)) {
-                                response.add(itemMap);
-                            }
-                            break;
-                        case 2:
-                            if (valueInt > predicateInt) {
-                                response.add(itemMap);
-                            }
-                            break;
-                        case 3:
-                            if (valueInt < predicateInt) {
-                                response.add(itemMap);
-                            }
-                            break;
-                        default:
-                            break;
-                    }
-                }
-            }
-
-            return response;
-        }
-
-        return map;
     }
 }
