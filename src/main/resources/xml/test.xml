@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="UTF-8"?><sports-content xmlns="http://iptc.org/std/SportsML/2008-04-01/" xmlns:xts="http://www.xmlteam.com" xmlns:bbc="http://www.bbc.co.uk/sport/sports-data">
+    <sports-metadata date-time="2015-09-04T16:10:59+01:00" doc-id="xt.opta.20150904161059-809979-post-event" language="en-US" fixture-key="event-stats" document-class="event-summary" fixture-name="Event Score and Stats">
+        <sports-title/>
+        <sports-content-codes>
+            <sports-content-code code-name="Opta" code-key="optasports.com" code-type="publisher"/>
+            <sports-content-code code-name="XML Team Solutions, Inc." code-key="xmlteam.com" code-type="distributor"/>
+            <sports-content-code code-type="sport" code-key="15054000" code-name="Soccer"/>
+            <sports-content-code code-type="tournament" code-key="129"/>
+            <sports-content-code code-type="league" code-key="l.rfpl.org" code-name="Russian Premier League" code-source="xmlteam.com"/>
+            <sports-content-code code-type="season" code-key="2015"/>
+            <sports-content-code code-type="team" code-key="4169"/>
+            <sports-content-code code-type="team" code-key="271"/>
+        </sports-content-codes>
+        <?xml-multiple sports-property?><sports-property formal-name="compound-key" value="soccer:2015:129:event-stats:809979"/></sports-metadata>
+    <sports-event>
+        <event-metadata date-coverage-type="event" event-key="809979" event-status="post-event" event-status-note="Result" start-date-time="2015-08-30T11:30:00+01:00" event-name="Lokomotiv Moscow v FK Krasnodar" event-outcome-type="regular">
+            <event-metadata-soccer week="7" minutes-elapsed="90">
+                <time-adjustment period-extra-time-elapsed="4"/>
+            </event-metadata-soccer>
+            <site>
+                <site-metadata site-key="s.6581">
+                    <name first="Lokomotiv Stadium, Moscow" full="Lokomotiv Stadium, Moscow" abbreviation="Lokomotiv Stadium, Moscow"/>
+                    <home-location country="Russia"/>
+                </site-metadata>
+                <site-stats alignment="home" attendance="10107"/>
+            </site>
+        </event-metadata>
+        <team id="e.809979-t.271">
+            <team-metadata team-key="271" alignment="home">
+                <name first="Lokomotiv Moscow" full="Lokomotiv Moscow" abbreviation="Lokomotiv Moscow" nickname="Lokomotiv Moscow"/>
+            </team-metadata>
+            <team-stats score="2" score-opposing="1" event-outcome="win" time-of-possession-percentage="45.9">
+                <sub-score period-value="1" score="1"/>
+                <sub-score period-value="2" score="1"/>
+                <team-stats-soccer line-formation="4231">
+                    <stats-soccer-offensive shots-total="13" shots-on-goal-total="4" corner-kicks="1"/>
+                    <stats-soccer-foul fouls-commited="16"/>
+                </team-stats-soccer>
+            </team-stats>
+            <player id="p.51121">
+                <player-metadata player-key="51121" position-regular="goalkeeper" uniform-number="1" status="starter">
+                    <name first="Guilherme" last="Alvim Marinato" full="Guilherme" abbreviation="Alvim Marinato"/>
+                    <player-metadata-soccer line-formation-position="1"/>
+                </player-metadata>
+                <player-stats team-coverage="single-team" date-coverage-type="event" events-started="1" time-played-total="90">
+                    <player-stats-soccer touches="31">
+                        <stats-soccer-offensive passes-total="23" passes-complete="7" passes-incomplete="16" passes-complete-3rd-final="1" passes-complete-long="2"/>
+                        <stats-soccer-defensive goals-against-total="1" saves="2" save-percentage="0.667" catches-punches="2"/>
+                        <stats-soccer-foul/>
+                    </player-stats-soccer>
+                </player-stats>
+            </player>
+            <player id="p.39635">
+                <player-metadata player-key="39635" position-regular="defender" uniform-number="49" status="starter">
+                    <name first="Roman" last="Shishkin" full="Roman Shishkin" abbreviation="Shishkin"/>
+                    <player-metadata-soccer line-formation-position="2"/>
+                </player-metadata>
+                <player-stats team-coverage="single-team" date-coverage-type="event" events-started="1" time-played-total="90">
+                    <player-stats-soccer aerials-won="1" touches="52">
+                        <stats-soccer-offensive crosses-18-yard="3" crosses-18-yard-plus="1" free-kicks="1" passes-total="28" passes-complete="23" passes-incomplete="5" passes-complete-3rd-final="3" passes-complete-long="3" tackles-total="2" tackles-won="2" tackles-lost="0"/>
+                        <stats-soccer-defensive goals-against-total="1" clearances-successful="3" interceptions="1"/>
+                        <stats-soccer-foul fouls-commited="2" fouls-suffered="3"/>
+                    </player-stats-soccer>
+                </player-stats>
+            </player>
+            <player id="p.38462">
+                <player-metadata player-key="38462" position-regular="defender" uniform-number="14" status="starter">
+                    <name first="Vedran" last="Corluka" full="Vedran Corluka" abbreviation="Corluka"/>
+                    <player-metadata-soccer line-formation-position="5"/>
+                </player-metadata>
+                <player-stats team-coverage="single-team" date-coverage-type="event" events-started="1" time-played-total="90">
+                    <player-stats-soccer touches="48">
+                        <stats-soccer-offensive passes-total="35" passes-complete="31" passes-incomplete="4" passes-complete-3rd-final="5" passes-complete-long="8" tackles-total="3" tackles-won="3" tackles-lost="0"/>
+                        <stats-soccer-defensive goals-against-total="1" shots-blocked-outfielder="1" clearances-successful="2" interceptions="2"/>
+                        <stats-soccer-foul cautions-total="1"/>
+                    </player-stats-soccer>
+                </player-stats>
+            </player>
+            <player id="p.62394">
+                <player-metadata player-key="62394" position-regular="defender" uniform-number="5" status="starter">
+                    <name first="Nemanja" last="Pejcinovic" full="Nemanja Pejcinovic" abbreviation="Pejcinovic"/>
+                    <player-metadata-soccer line-formation-position="6"/>
+                </player-metadata>
+                <player-stats team-coverage="single-team" date-coverage-type="event" events-started="1" time-played-total="90">
+                    <player-stats-soccer aerials-won="1" touches="57">
+                        <stats-soccer-offensive passes-total="42" passes-complete="36" passes-incomplete="6" passes-complete-3rd-final="4" passes-complete-long="8" tackles-total="2" tackles-won="1" tackles-lost="1"/>
+                        <stats-soccer-defensive goals-against-total="1" shots-blocked-outfielder="1" clearances-successful="4" interceptions="4"/>
+                        <stats-soccer-foul/>
+                    </player-stats-soccer>
+                </player-stats>
+            </player>
+            <player id="p.21221">
+                <player-metadata player-key="21221" position-regular="defender" uniform-number="29" status="starter">
+                    <name first="Vitaliy" last="Denisov" full="Vitaliy Denisov" abbreviation="Denisov"/>
+                    <player-metadata-soccer line-formation-position="3"/>
+                </player-metadata>
+                <player-stats team-coverage="single-team" date-coverage-type="event" events-started="1" time-played-total="90">
+                    <player-stats-soccer aerials-won="3" touches="88">
+                        <stats-soccer-offensive shots-total="1" shots-off-goal-total="1" crosses-18-yard-plus="1" passes-total="49" passes-complete="41" passes-incomplete="8" passes-complete-3rd-final="9" passes-complete-long="5" tackles-total="2" tackles-won="2" tackles-lost="0"/>
+                        <stats-soccer-defensive goals-against-total="1" clearances-successful="1" interceptions="7"/>
+                        <stats-soccer-foul fouls-commited="1" fouls-suffered="2"/>
+                    </player-stats-soccer>
+                </player-stats>
+            </player>
+            <player id="p.52748">
+                <player-metadata player-key="52748" position-regular="midfielder" uniform-number="88" status="starter">
+                    <name first="Delvin" last="N'Dinga" full="Delvin N'Dinga" abbreviation="N'Dinga"/>
+                    <player-metadata-soccer line-formation-position="8"/>
+                </player-metadata>
+                <player-stats team-coverage="single-team" date-coverage-type="event" events-started="1" time-played-total="45">
+                    <player-stats-soccer touches="43">
+                        <stats-soccer-offensive passes-total="30" passes-complete="26" passes-incomplete="4" passes-complete-3rd-final="7" passes-complete-long="2" tackles-total="2" tackles-won="1" tackles-lost="1"/>
+                        <stats-soccer-defensive goals-against-total="1" interceptions="3"/>
+                        <stats-soccer-foul fouls-commited="1"/>
+                    </player-stats-soccer>
+                </player-stats>
+            </player>
+            <player id="p.51208">
+                <player-metadata player-key="51208" position-regular="midfielder" uniform-number="23" status="starter">
+                    <name first="Dmitriy" last="Tarasov" full="Dmitriy Tarasov" abbreviation="Tarasov"/>
+                    <player-metadata-soccer line-formation-position="4"/>
+                </player-metadata>
+                <player-stats team-coverage="single-team" date-coverage-type="event" events-started="1" time-played-total="90">
+                    <player-stats-soccer aerials-won="2" touches="88">
+                        <stats-soccer-offensive shots-total="2" shots-off-goal-total="2" passes-total="61" passes-complete="46" passes-incomplete="15" passes-complete-3rd-final="15" passes-complete-long="4" tackles-total="5" tackles-won="4" tackles-lost="1"/>
+                        <stats-soccer-defensive goals-against-total="1" interceptions="4"/>
+                        <stats-soccer-foul fouls-commited="2" fouls-suffered="4" cautions-total="1"/>
+                    </player-stats-soccer>
+                </player-stats>
+            </player>
+            <player id="p.31886">
+                <player-metadata player-key="31886" position-regular="midfielder" uniform-number="19" status="starter">
+                    <name first="Aleksandr" last="Samedov" full="Aleksandr Samedov" abbreviation="Samedov"/>
+                    <player-metadata-soccer line-formation-position="7"/>
+                </player-metadata>
+                <player-stats team-coverage="single-team" date-coverage-type="event" events-started="1" time-played-total="90">
+                    <player-stats-soccer aerials-won="1" touches="52">
+                        <stats-soccer-offensive crosses-18-yard="1" crosses-18-yard-plus="4" passes-total="34" passes-complete="24" passes-incomplete="10" passes-complete-3rd-final="13"/>
+                        <stats-soccer-defensive goals-against-total="1" clearances-successful="1" interceptions="1"/>
+                        <stats-soccer-foul fouls-commited="3" fouls-suffered="1"/>
+                    </player-stats-soccer>
+                </player-stats>
+            </player>
+            <player id="p.83548">
+                <player-metadata player-key="83548" position-regular="midfielder" uniform-number="18" status="starter">
+                    <name first="Aleksandr" last="Kolomejtsev" full="Aleksandr Kolomejtsev" abbreviation="Kolomejtsev"/>
+                    <player-metadata-soccer line-formation-position="10"/>
+                </player-metadata>
+                <player-stats team-coverage="single-team" date-coverage-type="event" events-started="1" time-played-total="90">
+                    <player-stats-soccer touches="36">
+                        <stats-soccer-offensive passes-total="25" passes-complete="21" passes-incomplete="4" passes-complete-3rd-final="3" tackles-total="1" tackles-won="1" tackles-lost="0"/>
+                        <stats-soccer-defensive goals-against-total="1" interceptions="1"/>
+                        <stats-soccer-foul fouls-suffered="2"/>
+                    </player-stats-soccer>
+                </player-stats>
+            </player>
+            <player id="p.27752">
+                <player-metadata player-key="27752" position-regular="midfielder" uniform-number="3" status="starter">
+                    <name first="Alan" last="Kasaev" full="Alan Kasaev" abbreviation="Kasaev"/>
+                    <player-metadata-soccer line-formation-position="11"/>
+                </player-metadata>
+                <player-stats team-coverage="single-team" date-coverage-type="event" events-started="1" time-played-total="88">
+                    <player-stats-soccer touches="50">
+                        <stats-soccer-offensive goals-total="1" goals-left-foot="0" goals-right-foot="0" goals-head="0" shots-total="3" shots-on-goal-total="1" shots-off-goal-total="2" crosses-18-yard="1" crosses-18-yard-plus="3" passes-total="26" passes-complete="20" passes-incomplete="6" passes-complete-3rd-final="10" passes-complete-long="3"/>
+                        <stats-soccer-defensive goals-against-total="1"/>
+                        <stats-soccer-foul fouls-commited="4" fouls-suffered="4"/>
+                    </player-stats-soccer>
+                </player-stats>
+            </player>
+            <player id="p.113688">
+                <player-metadata player-key="113688" position-regular="forward" uniform-number="21" status="starter">
+                    <name first="Oumar" last="Niasse" full="Oumar Niasse" abbreviation="Niasse"/>
+                    <player-metadata-soccer line-formation-position="9"/>
+                </player-metadata>
+                <player-stats team-coverage="single-team" date-coverage-type="event" events-started="1" time-played-total="71">
+                    <player-stats-soccer touches="35">
+                        <stats-soccer-offensive goals-total="1" goals-left-foot="0" goals-right-foot="0" goals-head="0" shots-total="4" shots-on-goal-total="2" shots-off-goal-total="2" crosses-18-yard="1" passes-total="18" passes-complete="15" passes-incomplete="3" passes-complete-3rd-final="7" tackles-total="2" tackles-won="1" tackles-lost="1"/>
+                        <stats-soccer-defensive goals-against-total="1"/>
+                        <stats-soccer-foul fouls-commited="1"/>
+                    </player-stats-soccer>
+                </player-stats>
+            </player>
+            <player id="p.26909">
+                <player-metadata player-key="26909" position-regular="midfielder" uniform-number="4" status="bench">
+                    <name first="Manuel" last="Fernandes" full="Manuel Fernandes" abbreviation="Fernandes"/>
+                    <player-metadata-soccer line-formation-position="0"/>
+                </player-metadata>
+            </player>
+            <player id="p.51586">
+                <player-metadata player-key="51586" position-regular="forward" uniform-number="7" status="bench">
+                    <name first="Maicón" last="Marqués Bitencourt" full="Maicón" abbreviation="Marqués Bitencourt"/>
+                    <player-metadata-soccer line-formation-position="0"/>
+                </player-metadata>
+                <player-stats team-coverage="single-team" date-coverage-type="event" time-played-total="19">
+                    <player-stats-soccer touches="16">
+                        <stats-soccer-offensive shots-total="1" shots-on-goal-total="1" passes-total="10" passes-complete="8" passes-incomplete="2" passes-complete-3rd-final="4" passes-complete-long="2" tackles-total="1" tackles-won="1" tackles-lost="0"/>
+                        <stats-soccer-defensive goals-against-total="0"/>
+                        <stats-soccer-foul fouls-commited="1"/>
+                    </player-stats-soccer>
+                </player-stats>
+            </player>
+            <player id="p.51039">
+                <player-metadata player-key="51039" position-regular="forward" uniform-number="9" status="bench">
+                    <name first="Maksim" last="Grigoriev" full="Maksim Grigoriev" abbreviation="Grigoriev"/>
+                    <player-metadata-soccer line-formation-position="0"/>
+                </player-metadata>
+            </player>
+            <player id="p.60396">
+                <player-metadata player-key="60396" position-regular="defender" uniform-number="15" status="bench">
+                    <name first="Arseni" last="Logashov" full="Arseni Logashov" abbreviation="Logashov"/>
+                    <player-metadata-soccer line-formation-position="0"/>
+                </player-metadata>
+            </player>
+            <player id="p.39449">
+                <player-metadata player-key="39449" position-regular="midfielder" uniform-number="17" status="bench">
+                    <name first="Taras" last="Mykhalyk" full="Taras Mykhalyk" abbreviation="Mykhalyk"/>
+                    <player-metadata-soccer line-formation-position="0"/>
+                </player-metadata>
+                <player-stats team-coverage="single-team" date-coverage-type="event" time-played-total="45">
+                    <player-stats-soccer touches="28">
+                        <stats-soccer-offensive passes-total="17" passes-complete="14" passes-incomplete="3" passes-complete-3rd-final="1" tackles-total="1" tackles-won="0" tackles-lost="1"/>
+                        <stats-soccer-defensive goals-against-total="0" clearances-successful="2" interceptions="4"/>
+                        <stats-soccer-foul fouls-commited="1" fouls-suffered="1"/>
+                    </player-stats-soccer>
+                </player-stats>
+            </player>
+            <player id="p.68862">
+                <player-metadata player-key="68862" position-regular="forward" uniform-number="32" status="bench">
+                    <name first="Petar" last="Skuletic" full="Petar Skuletic" abbreviation="Skuletic"/>
+                    <player-metadata-soccer line-formation-position="0"/>
+                </player-metadata>
+            </player>
+            <player id="p.161956">
+                <player-metadata player-key="161956" position-regular="midfielder" uniform-number="36" status="bench">
+                    <name first="Dimitri" last="Barinov" full="Dimitri Barinov" abbreviation="Barinov"/>
+                    <player-metadata-soccer line-formation-position="0"/>
+                </player-metadata>
+            </player>
+            <player id="p.161941">
+                <player-metadata player-key="161941" position-regular="defender" uniform-number="52" status="bench">
+                    <name first="Sergei" last="Makarov" full="Sergei Makarov" abbreviation="Makarov"/>
+                    <player-metadata-soccer line-formation-position="0"/>
+                </player-metadata>
+            </player>
+            <player id="p.50330">
+                <player-metadata player-key="50330" position-regular="defender" uniform-number="55" status="bench">
+                    <name first="Renat" last="Yanbayev" full="Renat Yanbayev" abbreviation="Yanbayev"/>
+                    <player-metadata-soccer line-formation-position="0"/>
+                </player-metadata>
+                <player-stats team-coverage="single-team" date-coverage-type="event" time-played-total="2">
+                    <player-stats-soccer touches="6">
+                        <stats-soccer-offensive passes-total="6" passes-complete="5" passes-incomplete="1" passes-complete-3rd-final="3"/>
+                        <stats-soccer-defensive goals-against-total="0"/>
+                        <stats-soccer-foul/>
+                    </player-stats-soccer>
+                </player-stats>
+            </player>
+            <player id="p.160174">
+                <player-metadata player-key="160174" position-regular="midfielder" uniform-number="59" status="bench">
+                    <name first="Aleksey" last="Miranchuk" full="Aleksey Miranchuk" abbreviation="Miranchuk"/>
+                    <player-metadata-soccer line-formation-position="0"/>
+                </player-metadata>
+            </player>
+            <player id="p.48350">
+                <player-metadata player-key="48350" position-regular="goalkeeper" uniform-number="77" status="bench">
+                    <name first="Anton" last="Kochenkov" full="Anton Kochenkov" abbreviation="Kochenkov"/>
+                    <player-metadata-soccer line-formation-position="0"/>
+                </player-metadata>
+            </player>
+            <player id="p.81141">
+                <player-metadata player-key="81141" position-regular="goalkeeper" uniform-number="81" status="bench">
+                    <name first="Ilya" last="Abayev" full="Ilya Abayev" abbreviation="Abayev"/>
+                    <player-metadata-soccer line-formation-position="0"/>
+                </player-metadata>
+            </player>
+            <?xml-multiple associate?><associate id="man44778">
+            <associate-metadata position="Manager" position-source="optasports.com" associate-key="man44778">
+                <name first="Igor" last="Cherevchenko" full="Igor Cherevchenko" abbreviation="Cherevchenko"/>
+            </associate-metadata>
+        </associate>
+        </team>
+        <team id="e.809979-t.4169">
+            <team-metadata team-key="4169" alignment="away">
+                <name first="FK Krasnodar" full="FK Krasnodar" abbreviation="FK Krasnodar" nickname="FK Krasnodar"/>
+            </team-metadata>
+            <team-stats score="1" score-opposing="2" event-outcome="loss" time-of-possession-percentage="54.1">
+                <sub-score period-value="1" score="1"/>
+                <sub-score period-value="2" score="0"/>
+                <team-stats-soccer line-formation="433">
+                    <stats-soccer-offensive shots-total="10" shots-on-goal-total="3" corner-kicks="3"/>
+                    <stats-soccer-foul fouls-commited="17"/>
+                </team-stats-soccer>
+            </team-stats>
+            <player id="p.52257">
+                <player-metadata player-key="52257" position-regular="goalkeeper" uniform-number="31" status="starter">
+                    <name first="Andrey" last="Dikan" full="Andrey Dikan" abbreviation="Dikan"/>
+                    <player-metadata-soccer line-formation-position="1"/>
+                </player-metadata>
+                <player-stats team-coverage="single-team" date-coverage-type="event" events-started="1" time-played-total="90">
+                    <player-stats-soccer touches="37">
+                        <stats-soccer-offensive passes-total="29" passes-complete="22" passes-incomplete="7" passes-complete-3rd-final="3" passes-complete-long="13"/>
+                        <stats-soccer-defensive goals-against-total="2" saves="2" save-percentage="0.500"/>
+                        <stats-soccer-foul fouls-suffered="1"/>
+                    </player-stats-soccer>
+                </player-stats>
+            </player>
+            <player id="p.51092">
+                <player-metadata player-key="51092" position-regular="defender" uniform-number="17" status="starter">
+                    <name first="Vitaliy" last="Kaleshin" full="Vitaliy Kaleshin" abbreviation="Kaleshin"/>
+                    <player-metadata-soccer line-formation-position="2"/>
+                </player-metadata>
+                <player-stats team-coverage="single-team" date-coverage-type="event" events-started="1" time-played-total="90">
+                    <player-stats-soccer aerials-won="2" touches="82">
+                        <stats-soccer-offensive crosses-18-yard="4" crosses-18-yard-plus="2" passes-total="43" passes-complete="31" passes-incomplete="12" passes-complete-3rd-final="18" passes-complete-long="3" tackles-total="5" tackles-won="1" tackles-lost="4"/>
+                        <stats-soccer-defensive goals-against-total="2" clearances-successful="3" interceptions="4"/>
+                        <stats-soccer-foul fouls-commited="4" fouls-suffered="1"/>
+                    </player-stats-soccer>
+                </player-stats>
+            </player>
+            <player id="p.42507">
+                <player-metadata player-key="42507" position-regular="defender" uniform-number="27" status="starter">
+                    <name first="Ragnar" last="Sigurdsson" full="Ragnar Sigurdsson" abbreviation="Sigurdsson"/>
+                    <player-metadata-soccer line-formation-position="5"/>
+                </player-metadata>
+                <player-stats team-coverage="single-team" date-coverage-type="event" events-started="1" time-played-total="90">
+                    <player-stats-soccer touches="43">
+                        <stats-soccer-offensive passes-total="33" passes-complete="30" passes-incomplete="3" passes-complete-3rd-final="4" passes-complete-long="2" tackles-total="1" tackles-won="0" tackles-lost="1"/>
+                        <stats-soccer-defensive goals-against-total="2" clearances-successful="2" interceptions="3"/>
+                        <stats-soccer-foul/>
+                    </player-stats-soccer>
+                </player-stats>
+            </player>
+            <player id="p.37146">
+                <player-metadata player-key="37146" position-regular="defender" uniform-number="6" status="starter">
+                    <name first="Andreas" last="Granqvist" full="Andreas Granqvist" abbreviation="Granqvist"/>
+                    <player-metadata-soccer line-formation-position="6"/>
+                </player-metadata>
+                <player-stats team-coverage="single-team" date-coverage-type="event" events-started="1" time-played-total="90">
+                    <player-stats-soccer aerials-won="5" touches="63">
+                        <stats-soccer-offensive shots-total="1" shots-off-goal-total="1" passes-total="43" passes-complete="40" passes-incomplete="3" passes-complete-3rd-final="4" passes-complete-long="6" tackles-total="4" tackles-won="4" tackles-lost="0"/>
+                        <stats-soccer-defensive goals-against-total="2" clearances-successful="3" interceptions="4"/>
+                        <stats-soccer-foul fouls-commited="2" fouls-suffered="1"/>
+                    </player-stats-soccer>
+                </player-stats>
+            </player>
+            <player id="p.61679">
+                <player-metadata player-key="61679" position-regular="defender" uniform-number="98" status="starter">
+                    <name first="Sergei" last="Petrov" full="Sergei Petrov" abbreviation="Petrov"/>
+                    <player-metadata-soccer line-formation-position="3"/>
+                </player-metadata>
+                <player-stats team-coverage="single-team" date-coverage-type="event" events-started="1" time-played-total="90">
+                    <player-stats-soccer aerials-won="1" touches="57">
+                        <stats-soccer-offensive shots-total="1" shots-off-goal-total="1" crosses-18-yard="1" passes-total="34" passes-complete="30" passes-incomplete="4" passes-complete-3rd-final="10" tackles-total="1" tackles-won="1" tackles-lost="0"/>
+                        <stats-soccer-defensive goals-against-total="2" clearances-successful="4" interceptions="3"/>
+                        <stats-soccer-foul fouls-suffered="2"/>
+                    </player-stats-soccer>
+                </player-stats>
+            </player>
+            <player id="p.166015">
+                <player-metadata player-key="166015" position-regular="midfielder" uniform-number="8" status="starter">
+                    <name first="Yuri" last="Gazinskiy" full="Yuri Gazinskiy" abbreviation="Gazinskiy"/>
+                    <player-metadata-soccer line-formation-position="7"/>
+                </player-metadata>
+                <player-stats team-coverage="single-team" date-coverage-type="event" events-started="1" time-played-total="61">
+                    <player-stats-soccer aerials-won="1" touches="56">
+                        <stats-soccer-offensive crosses-18-yard-plus="2" assists-total="1" passes-total="44" passes-complete="33" passes-incomplete="11" passes-complete-3rd-final="8" passes-complete-long="1" tackles-total="2" tackles-won="2" tackles-lost="0"/>
+                        <stats-soccer-defensive goals-against-total="2" interceptions="1"/>
+                        <stats-soccer-foul fouls-commited="3" fouls-suffered="1" cautions-total="1"/>
+                    </player-stats-soccer>
+                </player-stats>
+            </player>
+            <player id="p.61966">
+                <player-metadata player-key="61966" position-regular="midfielder" uniform-number="3" status="starter">
+                    <name first="Stefan" last="Strandberg" full="Stefan Strandberg" abbreviation="Strandberg"/>
+                    <player-metadata-soccer line-formation-position="4"/>
+                </player-metadata>
+                <player-stats team-coverage="single-team" date-coverage-type="event" events-started="1" time-played-total="90">
+                    <player-stats-soccer touches="103">
+                        <stats-soccer-offensive crosses-18-yard-plus="2" passes-total="89" passes-complete="67" passes-incomplete="22" passes-complete-3rd-final="19" passes-complete-long="2" tackles-total="4" tackles-won="3" tackles-lost="1"/>
+                        <stats-soccer-defensive goals-against-total="2" shots-blocked-outfielder="1" clearances-successful="3" interceptions="2"/>
+                        <stats-soccer-foul fouls-commited="2" cautions-total="1"/>
+                    </player-stats-soccer>
+                </player-stats>
+            </player>
+            <player id="p.47435">
+                <player-metadata player-key="47435" position-regular="midfielder" uniform-number="7" status="starter">
+                    <name first="Pavel" last="Mamaev" full="Pavel Mamaev" abbreviation="Mamaev"/>
+                    <player-metadata-soccer line-formation-position="8"/>
+                </player-metadata>
+                <player-stats team-coverage="single-team" date-coverage-type="event" events-started="1" time-played-total="90">
+                    <player-stats-soccer touches="49">
+                        <stats-soccer-offensive shots-total="1" shots-off-goal-total="1" passes-total="39" passes-complete="34" passes-incomplete="5" passes-complete-3rd-final="16" passes-complete-long="3" tackles-total="1" tackles-won="1" tackles-lost="0"/>
+                        <stats-soccer-defensive goals-against-total="2"/>
+                        <stats-soccer-foul fouls-commited="2"/>
+                    </player-stats-soccer>
+                </player-stats>
+            </player>
+            <player id="p.57155">
+                <player-metadata player-key="57155" position-regular="forward" uniform-number="21" status="starter">
+                    <name first="Ricardo" last="Laborde" full="Ricardo Laborde" abbreviation="Laborde"/>
+                    <player-metadata-soccer line-formation-position="10"/>
+                </player-metadata>
+                <player-stats team-coverage="single-team" date-coverage-type="event" events-started="1" time-played-total="45">
+                    <player-stats-soccer touches="26">
+                        <stats-soccer-offensive passes-total="15" passes-complete="8" passes-incomplete="7" passes-complete-3rd-final="6"/>
+                        <stats-soccer-defensive goals-against-total="1"/>
+                        <stats-soccer-foul fouls-commited="2" fouls-suffered="3" cautions-total="1"/>
+                    </player-stats-soccer>
+                </player-stats>
+            </player>
+            <player id="p.42515">
+                <player-metadata player-key="42515" position-regular="forward" uniform-number="9" status="starter">
+                    <name first="Ariclenes" last="da Silva Ferreira" full="Ari" abbreviation="da Silva Ferreira"/>
+                    <player-metadata-soccer line-formation-position="9"/>
+                </player-metadata>
+                <player-stats team-coverage="single-team" date-coverage-type="event" events-started="1" time-played-total="67">
+                    <player-stats-soccer touches="34">
+                        <stats-soccer-offensive crosses-18-yard-plus="1" passes-total="24" passes-complete="18" passes-incomplete="6" passes-complete-3rd-final="6" passes-complete-long="1"/>
+                        <stats-soccer-defensive goals-against-total="2" shots-blocked-outfielder="1" clearances-successful="1"/>
+                        <stats-soccer-foul fouls-commited="2" fouls-suffered="1"/>
+                    </player-stats-soccer>
+                </player-stats>
+            </player>
+            <player id="p.51129">
+                <player-metadata player-key="51129" position-regular="forward" uniform-number="90" status="starter">
+                    <name first="Fedor" last="Smolov" full="Fedor Smolov" abbreviation="Smolov"/>
+                    <player-metadata-soccer line-formation-position="11"/>
+                </player-metadata>
+                <player-stats team-coverage="single-team" date-coverage-type="event" events-started="1" time-played-total="90">
+                    <player-stats-soccer aerials-won="2" touches="60">
+                        <stats-soccer-offensive goals-total="1" goals-left-foot="0" goals-right-foot="0" goals-head="0" shots-total="4" shots-on-goal-total="3" shots-off-goal-total="1" crosses-18-yard-plus="1" passes-total="41" passes-complete="28" passes-incomplete="13" passes-complete-3rd-final="5" passes-complete-long="1" tackles-total="1" tackles-won="1" tackles-lost="0"/>
+                        <stats-soccer-defensive goals-against-total="2"/>
+                        <stats-soccer-foul fouls-suffered="2"/>
+                    </player-stats-soccer>
+                </player-stats>
+            </player>
+            <player id="p.15104">
+                <player-metadata player-key="15104" position-regular="midfielder" uniform-number="4" status="bench">
+                    <name first="Dmitri" last="Torbinski" full="Dmitri Torbinski" abbreviation="Torbinski"/>
+                    <player-metadata-soccer line-formation-position="0"/>
+                </player-metadata>
+            </player>
+            <player id="p.71383">
+                <player-metadata player-key="71383" position-regular="defender" uniform-number="5" status="bench">
+                    <name first="Artur" last="Jedrzejczyk" full="Artur Jedrzejczyk" abbreviation="Jedrzejczyk"/>
+                    <player-metadata-soccer line-formation-position="0"/>
+                </player-metadata>
+            </player>
+            <player id="p.79030">
+                <player-metadata player-key="79030" position-regular="midfielder" uniform-number="10" status="bench">
+                    <name first="Odil" last="Ahmedov" full="Odil Ahmedov" abbreviation="Ahmedov"/>
+                    <player-metadata-soccer line-formation-position="0"/>
+                </player-metadata>
+                <player-stats team-coverage="single-team" date-coverage-type="event" time-played-total="29">
+                    <player-stats-soccer touches="41">
+                        <stats-soccer-offensive shots-total="1" shots-off-goal-total="1" crosses-18-yard-plus="1" passes-total="30" passes-complete="27" passes-incomplete="3" passes-complete-3rd-final="12" passes-complete-long="3" tackles-total="1" tackles-won="1" tackles-lost="0"/>
+                        <stats-soccer-defensive goals-against-total="0" interceptions="1"/>
+                        <stats-soccer-foul fouls-suffered="3"/>
+                    </player-stats-soccer>
+                </player-stats>
+            </player>
+            <player id="p.112363">
+                <player-metadata player-key="112363" position-regular="forward" uniform-number="14" status="bench">
+                    <name first="Wanderson" last="do Carmo Carneiro" full="Wanderson" abbreviation="do Carmo Carneiro"/>
+                    <player-metadata-soccer line-formation-position="0"/>
+                </player-metadata>
+                <player-stats team-coverage="single-team" date-coverage-type="event" time-played-total="23">
+                    <player-stats-soccer touches="7">
+                        <stats-soccer-offensive passes-total="4" passes-complete="3" passes-incomplete="1" passes-complete-3rd-final="1"/>
+                        <stats-soccer-defensive goals-against-total="0"/>
+                        <stats-soccer-foul/>
+                    </player-stats-soccer>
+                </player-stats>
+            </player>
+            <player id="p.69756">
+                <player-metadata player-key="69756" position-regular="defender" uniform-number="15" status="bench">
+                    <name first="Nikolai" last="Markov" full="Nikolai Markov" abbreviation="Markov"/>
+                    <player-metadata-soccer line-formation-position="0"/>
+                </player-metadata>
+            </player>
+            <player id="p.18051">
+                <player-metadata player-key="18051" position-regular="midfielder" uniform-number="18" status="bench">
+                    <name first="Vladimir" last="Bystrov" full="Vladimir Bystrov" abbreviation="Bystrov"/>
+                    <player-metadata-soccer line-formation-position="0"/>
+                </player-metadata>
+                <player-stats team-coverage="single-team" date-coverage-type="event" time-played-total="45">
+                    <player-stats-soccer touches="15">
+                        <stats-soccer-offensive crosses-18-yard="1" crosses-18-yard-plus="1" passes-total="8" passes-complete="6" passes-incomplete="2" passes-complete-3rd-final="5" tackles-total="1" tackles-won="1" tackles-lost="0"/>
+                        <stats-soccer-defensive goals-against-total="1" interceptions="1"/>
+                        <stats-soccer-foul/>
+                    </player-stats-soccer>
+                </player-stats>
+            </player>
+            <player id="p.184224">
+                <player-metadata player-key="184224" position-regular="goalkeeper" uniform-number="51" status="bench">
+                    <name first="Denis" last="Kavlinov" full="Denis Kavlinov" abbreviation="Kavlinov"/>
+                    <player-metadata-soccer line-formation-position="0"/>
+                </player-metadata>
+            </player>
+            <player id="p.44460">
+                <player-metadata player-key="44460" position-regular="midfielder" uniform-number="77" status="bench">
+                    <name first="Charles" last="Kaboré" full="Charles Kaboré" abbreviation="Kaboré"/>
+                    <player-metadata-soccer line-formation-position="0"/>
+                </player-metadata>
+            </player>
+            <player id="p.102058">
+                <player-metadata player-key="102058" position-regular="goalkeeper" uniform-number="88" status="bench">
+                    <name first="Andrei" last="Sinitsyn" full="Andrei Sinitsyn" abbreviation="Sinitsyn"/>
+                    <player-metadata-soccer line-formation-position="0"/>
+                </player-metadata>
+            </player>
+            <?xml-multiple associate?><associate id="man38858">
+            <associate-metadata position="Manager" position-source="optasports.com" associate-key="man38858">
+                <name first="Oleg" last="Kononov" full="Oleg Kononov" abbreviation="Kononov"/>
+            </associate-metadata>
+        </associate>
+        </team>
+        <officials>
+            <?xml-multiple official?><official>
+            <official-metadata official-key="PO42458" position="main-official">
+                <name first="Sergey" last="Ivanov" full="Sergey Ivanov" abbreviation="Ivanov"/>
+            </official-metadata>
+        </official>
+        </officials>
+        <event-actions>
+            <event-actions-soccer><?xml-multiple action-soccer-penalty?><action-soccer-penalty id="a.174763229" sequence-number="0830115246" minutes-elapsed="21" period-value="1" team-idref="e.809979-t.4169" recipient-type="player" recipient-idref="p.57155" penalty-level="yellow-card" penalty-type="foul" comment="Foul"/><action-soccer-penalty id="a.2046608111" sequence-number="0830120114" minutes-elapsed="30" period-value="1" team-idref="e.809979-t.271" recipient-type="player" recipient-idref="p.51208" penalty-level="yellow-card" penalty-type="foul" comment="Foul"/><action-soccer-penalty id="a.1541738032" sequence-number="0830120337" minutes-elapsed="32" period-value="1" team-idref="e.809979-t.271" recipient-type="player" recipient-idref="p.38462" penalty-level="yellow-card" penalty-type="dissent" comment="Dissent"/><action-soccer-penalty id="a.720932334" sequence-number="0830120519" minutes-elapsed="34" period-value="1" team-idref="e.809979-t.4169" recipient-type="player" recipient-idref="p.166015" penalty-level="yellow-card" penalty-type="foul" comment="Foul"/><action-soccer-penalty id="a.1509163336" sequence-number="0830120957" minutes-elapsed="39" period-value="1" team-idref="e.809979-t.4169" recipient-type="player" recipient-idref="p.61966" penalty-level="yellow-card" penalty-type="foul" comment="Foul"/><?xml-multiple action-soccer-score?><action-soccer-score id="a.579271644" sequence-number="0830114207" period-value="1" team-idref="e.809979-t.4169" score-attempt-type="regular" minutes-elapsed="11">
+                <?xml-multiple action-soccer-play-participant?><action-soccer-play-participant player-idref="PO51129" team-idref="e.809979-t.4169" role="scorer"/>
+                <action-soccer-play-participant player-idref="PO166015" team-idref="e.809979-t.4169" role="assist"/>
+            </action-soccer-score><action-soccer-score id="a.438928909" sequence-number="0830114911" period-value="1" team-idref="e.809979-t.271" score-attempt-type="regular" minutes-elapsed="18">
+                <?xml-multiple action-soccer-play-participant?><action-soccer-play-participant player-idref="PO113688" team-idref="e.809979-t.271" role="scorer"/>
+            </action-soccer-score><action-soccer-score id="a.433565729" sequence-number="0830124703" period-value="2" team-idref="e.809979-t.271" score-attempt-type="regular" minutes-elapsed="56">
+                <?xml-multiple action-soccer-play-participant?><action-soccer-play-participant player-idref="PO27752" team-idref="e.809979-t.271" role="scorer"/>
+            </action-soccer-score><?xml-multiple action-soccer-substitution?><action-soccer-substitution id="a.1684050459" sequence-number="0830123534" minutes-elapsed="45" period-value="2" team-idref="e.809979-t.271" person-replacing-position="midfielder" person-original-idref="PO52748" person-replacing-idref="PO39449" substitution-reason="Tactical"/><action-soccer-substitution id="a.357938512" sequence-number="0830123608" minutes-elapsed="45" period-value="2" team-idref="e.809979-t.4169" person-replacing-position="midfielder" person-original-idref="PO57155" person-replacing-idref="PO18051" substitution-reason="Tactical"/><action-soccer-substitution id="a.2127421905" sequence-number="0830125147" minutes-elapsed="61" period-value="2" team-idref="e.809979-t.4169" person-replacing-position="midfielder" person-original-idref="PO166015" person-replacing-idref="PO79030" substitution-reason="Tactical"/><action-soccer-substitution id="a.456999202" sequence-number="0830125750" minutes-elapsed="67" period-value="2" team-idref="e.809979-t.4169" person-replacing-position="forward" person-original-idref="PO42515" person-replacing-idref="PO112363" substitution-reason="Tactical"/><action-soccer-substitution id="a.800194081" sequence-number="0830130217" minutes-elapsed="71" period-value="2" team-idref="e.809979-t.271" person-replacing-position="midfielder" person-original-idref="PO113688" person-replacing-idref="PO51586" substitution-reason="Tactical"/><action-soccer-substitution id="a.213976171" sequence-number="0830131844" minutes-elapsed="88" period-value="2" team-idref="e.809979-t.271" person-replacing-position="defender" person-original-idref="PO27752" person-replacing-idref="PO50330" substitution-reason="Tactical"/></event-actions-soccer>
+        </event-actions>
+    </sports-event>
+</sports-content>

@@ -1,0 +1,1864 @@
+{
+  "sports-content" : {
+    "@xmlns" : "http://iptc.org/std/SportsML/2008-04-01/",
+    "@xmlns:xts" : "http://www.xmlteam.com",
+    "@xmlns:bbc" : "http://www.bbc.co.uk/sport/sports-data",
+    "sports-metadata" : {
+      "@document-class" : "event-summary",
+      "@fixture-name" : "Event Score and Stats",
+      "@date-time" : "2015-09-04T16:10:59+01:00",
+      "@language" : "en-US",
+      "@fixture-key" : "event-stats",
+      "@doc-id" : "xt.opta.20150904161059-809979-post-event",
+      "sports-title" : null,
+      "sports-content-codes" : {
+        "sports-content-code" : [ {
+          "@code-name" : "Opta",
+          "@code-type" : "publisher",
+          "@code-key" : "optasports.com"
+        }, {
+          "@code-name" : "XML Team Solutions, Inc.",
+          "@code-type" : "distributor",
+          "@code-key" : "xmlteam.com"
+        }, {
+          "@code-name" : "Soccer",
+          "@code-type" : "sport",
+          "@code-key" : "15054000"
+        }, {
+          "@code-type" : "tournament",
+          "@code-key" : "129"
+        }, {
+          "@code-name" : "Russian Premier League",
+          "@code-type" : "league",
+          "@code-key" : "l.rfpl.org",
+          "@code-source" : "xmlteam.com"
+        }, {
+          "@code-type" : "season",
+          "@code-key" : "2015"
+        }, {
+          "@code-type" : "team",
+          "@code-key" : "4169"
+        }, {
+          "@code-type" : "team",
+          "@code-key" : "271"
+        } ]
+      },
+      "sports-property" : [ {
+        "@value" : "soccer:2015:129:event-stats:809979",
+        "@formal-name" : "compound-key"
+      } ]
+    },
+    "sports-event" : {
+      "event-metadata" : {
+        "@event-key" : "809979",
+        "@start-date-time" : "2015-08-30T11:30:00+01:00",
+        "@event-status" : "post-event",
+        "@event-name" : "Lokomotiv Moscow v FK Krasnodar",
+        "@event-outcome-type" : "regular",
+        "@date-coverage-type" : "event",
+        "@event-status-note" : "Result",
+        "event-metadata-soccer" : {
+          "@week" : "7",
+          "@minutes-elapsed" : "90",
+          "time-adjustment" : {
+            "@period-extra-time-elapsed" : "4"
+          }
+        },
+        "site" : {
+          "site-metadata" : {
+            "@site-key" : "s.6581",
+            "name" : {
+              "@abbreviation" : "Lokomotiv Stadium, Moscow",
+              "@first" : "Lokomotiv Stadium, Moscow",
+              "@full" : "Lokomotiv Stadium, Moscow"
+            },
+            "home-location" : {
+              "@country" : "Russia"
+            }
+          },
+          "site-stats" : {
+            "@alignment" : "home",
+            "@attendance" : "10107"
+          }
+        }
+      },
+      "team" : [ {
+        "@id" : "e.809979-t.271",
+        "team-metadata" : {
+          "@team-key" : "271",
+          "@alignment" : "home",
+          "name" : {
+            "@nickname" : "Lokomotiv Moscow",
+            "@abbreviation" : "Lokomotiv Moscow",
+            "@first" : "Lokomotiv Moscow",
+            "@full" : "Lokomotiv Moscow"
+          }
+        },
+        "team-stats" : {
+          "@score" : "2",
+          "@score-opposing" : "1",
+          "@time-of-possession-percentage" : "45.9",
+          "@event-outcome" : "win",
+          "sub-score" : [ {
+            "@score" : "1",
+            "@period-value" : "1"
+          }, {
+            "@score" : "1",
+            "@period-value" : "2"
+          } ],
+          "team-stats-soccer" : {
+            "@line-formation" : "4231",
+            "stats-soccer-offensive" : {
+              "@corner-kicks" : "1",
+              "@shots-total" : "13",
+              "@shots-on-goal-total" : "4"
+            },
+            "stats-soccer-foul" : {
+              "@fouls-commited" : "16"
+            }
+          }
+        },
+        "player" : [ {
+          "@id" : "p.51121",
+          "player-metadata" : {
+            "@player-key" : "51121",
+            "@uniform-number" : "1",
+            "@position-regular" : "goalkeeper",
+            "@status" : "starter",
+            "name" : {
+              "@last" : "Alvim Marinato",
+              "@abbreviation" : "Alvim Marinato",
+              "@first" : "Guilherme",
+              "@full" : "Guilherme"
+            },
+            "player-metadata-soccer" : {
+              "@line-formation-position" : "1"
+            }
+          },
+          "player-stats" : {
+            "@time-played-total" : "90",
+            "@events-started" : "1",
+            "@team-coverage" : "single-team",
+            "@date-coverage-type" : "event",
+            "player-stats-soccer" : {
+              "@touches" : "31",
+              "stats-soccer-offensive" : {
+                "@passes-complete" : "7",
+                "@passes-complete-long" : "2",
+                "@passes-total" : "23",
+                "@passes-incomplete" : "16",
+                "@passes-complete-3rd-final" : "1"
+              },
+              "stats-soccer-defensive" : {
+                "@goals-against-total" : "1",
+                "@saves" : "2",
+                "@save-percentage" : "0.667",
+                "@catches-punches" : "2"
+              },
+              "stats-soccer-foul" : null
+            }
+          }
+        }, {
+          "@id" : "p.39635",
+          "player-metadata" : {
+            "@player-key" : "39635",
+            "@uniform-number" : "49",
+            "@position-regular" : "defender",
+            "@status" : "starter",
+            "name" : {
+              "@last" : "Shishkin",
+              "@abbreviation" : "Shishkin",
+              "@first" : "Roman",
+              "@full" : "Roman Shishkin"
+            },
+            "player-metadata-soccer" : {
+              "@line-formation-position" : "2"
+            }
+          },
+          "player-stats" : {
+            "@time-played-total" : "90",
+            "@events-started" : "1",
+            "@team-coverage" : "single-team",
+            "@date-coverage-type" : "event",
+            "player-stats-soccer" : {
+              "@touches" : "52",
+              "@aerials-won" : "1",
+              "stats-soccer-offensive" : {
+                "@tackles-won" : "2",
+                "@passes-complete" : "23",
+                "@passes-complete-long" : "3",
+                "@crosses-18-yard" : "3",
+                "@passes-total" : "28",
+                "@tackles-total" : "2",
+                "@tackles-lost" : "0",
+                "@free-kicks" : "1",
+                "@passes-incomplete" : "5",
+                "@passes-complete-3rd-final" : "3",
+                "@crosses-18-yard-plus" : "1"
+              },
+              "stats-soccer-defensive" : {
+                "@goals-against-total" : "1",
+                "@clearances-successful" : "3",
+                "@interceptions" : "1"
+              },
+              "stats-soccer-foul" : {
+                "@fouls-suffered" : "3",
+                "@fouls-commited" : "2"
+              }
+            }
+          }
+        }, {
+          "@id" : "p.38462",
+          "player-metadata" : {
+            "@player-key" : "38462",
+            "@uniform-number" : "14",
+            "@position-regular" : "defender",
+            "@status" : "starter",
+            "name" : {
+              "@last" : "Corluka",
+              "@abbreviation" : "Corluka",
+              "@first" : "Vedran",
+              "@full" : "Vedran Corluka"
+            },
+            "player-metadata-soccer" : {
+              "@line-formation-position" : "5"
+            }
+          },
+          "player-stats" : {
+            "@time-played-total" : "90",
+            "@events-started" : "1",
+            "@team-coverage" : "single-team",
+            "@date-coverage-type" : "event",
+            "player-stats-soccer" : {
+              "@touches" : "48",
+              "stats-soccer-offensive" : {
+                "@tackles-won" : "3",
+                "@passes-complete" : "31",
+                "@passes-complete-long" : "8",
+                "@passes-total" : "35",
+                "@tackles-total" : "3",
+                "@tackles-lost" : "0",
+                "@passes-incomplete" : "4",
+                "@passes-complete-3rd-final" : "5"
+              },
+              "stats-soccer-defensive" : {
+                "@goals-against-total" : "1",
+                "@shots-blocked-outfielder" : "1",
+                "@clearances-successful" : "2",
+                "@interceptions" : "2"
+              },
+              "stats-soccer-foul" : {
+                "@cautions-total" : "1"
+              }
+            }
+          }
+        }, {
+          "@id" : "p.62394",
+          "player-metadata" : {
+            "@player-key" : "62394",
+            "@uniform-number" : "5",
+            "@position-regular" : "defender",
+            "@status" : "starter",
+            "name" : {
+              "@last" : "Pejcinovic",
+              "@abbreviation" : "Pejcinovic",
+              "@first" : "Nemanja",
+              "@full" : "Nemanja Pejcinovic"
+            },
+            "player-metadata-soccer" : {
+              "@line-formation-position" : "6"
+            }
+          },
+          "player-stats" : {
+            "@time-played-total" : "90",
+            "@events-started" : "1",
+            "@team-coverage" : "single-team",
+            "@date-coverage-type" : "event",
+            "player-stats-soccer" : {
+              "@touches" : "57",
+              "@aerials-won" : "1",
+              "stats-soccer-offensive" : {
+                "@tackles-won" : "1",
+                "@passes-complete" : "36",
+                "@passes-complete-long" : "8",
+                "@passes-total" : "42",
+                "@tackles-total" : "2",
+                "@tackles-lost" : "1",
+                "@passes-incomplete" : "6",
+                "@passes-complete-3rd-final" : "4"
+              },
+              "stats-soccer-defensive" : {
+                "@goals-against-total" : "1",
+                "@shots-blocked-outfielder" : "1",
+                "@clearances-successful" : "4",
+                "@interceptions" : "4"
+              },
+              "stats-soccer-foul" : null
+            }
+          }
+        }, {
+          "@id" : "p.21221",
+          "player-metadata" : {
+            "@player-key" : "21221",
+            "@uniform-number" : "29",
+            "@position-regular" : "defender",
+            "@status" : "starter",
+            "name" : {
+              "@last" : "Denisov",
+              "@abbreviation" : "Denisov",
+              "@first" : "Vitaliy",
+              "@full" : "Vitaliy Denisov"
+            },
+            "player-metadata-soccer" : {
+              "@line-formation-position" : "3"
+            }
+          },
+          "player-stats" : {
+            "@time-played-total" : "90",
+            "@events-started" : "1",
+            "@team-coverage" : "single-team",
+            "@date-coverage-type" : "event",
+            "player-stats-soccer" : {
+              "@touches" : "88",
+              "@aerials-won" : "3",
+              "stats-soccer-offensive" : {
+                "@tackles-won" : "2",
+                "@passes-complete" : "41",
+                "@passes-complete-long" : "5",
+                "@shots-total" : "1",
+                "@passes-total" : "49",
+                "@tackles-total" : "2",
+                "@tackles-lost" : "0",
+                "@passes-incomplete" : "8",
+                "@passes-complete-3rd-final" : "9",
+                "@crosses-18-yard-plus" : "1",
+                "@shots-off-goal-total" : "1"
+              },
+              "stats-soccer-defensive" : {
+                "@goals-against-total" : "1",
+                "@clearances-successful" : "1",
+                "@interceptions" : "7"
+              },
+              "stats-soccer-foul" : {
+                "@fouls-suffered" : "2",
+                "@fouls-commited" : "1"
+              }
+            }
+          }
+        }, {
+          "@id" : "p.52748",
+          "player-metadata" : {
+            "@player-key" : "52748",
+            "@uniform-number" : "88",
+            "@position-regular" : "midfielder",
+            "@status" : "starter",
+            "name" : {
+              "@last" : "N'Dinga",
+              "@abbreviation" : "N'Dinga",
+              "@first" : "Delvin",
+              "@full" : "Delvin N'Dinga"
+            },
+            "player-metadata-soccer" : {
+              "@line-formation-position" : "8"
+            }
+          },
+          "player-stats" : {
+            "@time-played-total" : "45",
+            "@events-started" : "1",
+            "@team-coverage" : "single-team",
+            "@date-coverage-type" : "event",
+            "player-stats-soccer" : {
+              "@touches" : "43",
+              "stats-soccer-offensive" : {
+                "@tackles-won" : "1",
+                "@passes-complete" : "26",
+                "@passes-complete-long" : "2",
+                "@passes-total" : "30",
+                "@tackles-total" : "2",
+                "@tackles-lost" : "1",
+                "@passes-incomplete" : "4",
+                "@passes-complete-3rd-final" : "7"
+              },
+              "stats-soccer-defensive" : {
+                "@goals-against-total" : "1",
+                "@interceptions" : "3"
+              },
+              "stats-soccer-foul" : {
+                "@fouls-commited" : "1"
+              }
+            }
+          }
+        }, {
+          "@id" : "p.51208",
+          "player-metadata" : {
+            "@player-key" : "51208",
+            "@uniform-number" : "23",
+            "@position-regular" : "midfielder",
+            "@status" : "starter",
+            "name" : {
+              "@last" : "Tarasov",
+              "@abbreviation" : "Tarasov",
+              "@first" : "Dmitriy",
+              "@full" : "Dmitriy Tarasov"
+            },
+            "player-metadata-soccer" : {
+              "@line-formation-position" : "4"
+            }
+          },
+          "player-stats" : {
+            "@time-played-total" : "90",
+            "@events-started" : "1",
+            "@team-coverage" : "single-team",
+            "@date-coverage-type" : "event",
+            "player-stats-soccer" : {
+              "@touches" : "88",
+              "@aerials-won" : "2",
+              "stats-soccer-offensive" : {
+                "@tackles-won" : "4",
+                "@passes-complete" : "46",
+                "@passes-complete-long" : "4",
+                "@shots-total" : "2",
+                "@passes-total" : "61",
+                "@tackles-total" : "5",
+                "@tackles-lost" : "1",
+                "@passes-incomplete" : "15",
+                "@passes-complete-3rd-final" : "15",
+                "@shots-off-goal-total" : "2"
+              },
+              "stats-soccer-defensive" : {
+                "@goals-against-total" : "1",
+                "@interceptions" : "4"
+              },
+              "stats-soccer-foul" : {
+                "@fouls-suffered" : "4",
+                "@fouls-commited" : "2",
+                "@cautions-total" : "1"
+              }
+            }
+          }
+        }, {
+          "@id" : "p.31886",
+          "player-metadata" : {
+            "@player-key" : "31886",
+            "@uniform-number" : "19",
+            "@position-regular" : "midfielder",
+            "@status" : "starter",
+            "name" : {
+              "@last" : "Samedov",
+              "@abbreviation" : "Samedov",
+              "@first" : "Aleksandr",
+              "@full" : "Aleksandr Samedov"
+            },
+            "player-metadata-soccer" : {
+              "@line-formation-position" : "7"
+            }
+          },
+          "player-stats" : {
+            "@time-played-total" : "90",
+            "@events-started" : "1",
+            "@team-coverage" : "single-team",
+            "@date-coverage-type" : "event",
+            "player-stats-soccer" : {
+              "@touches" : "52",
+              "@aerials-won" : "1",
+              "stats-soccer-offensive" : {
+                "@passes-complete" : "24",
+                "@crosses-18-yard" : "1",
+                "@passes-total" : "34",
+                "@passes-incomplete" : "10",
+                "@passes-complete-3rd-final" : "13",
+                "@crosses-18-yard-plus" : "4"
+              },
+              "stats-soccer-defensive" : {
+                "@goals-against-total" : "1",
+                "@clearances-successful" : "1",
+                "@interceptions" : "1"
+              },
+              "stats-soccer-foul" : {
+                "@fouls-suffered" : "1",
+                "@fouls-commited" : "3"
+              }
+            }
+          }
+        }, {
+          "@id" : "p.83548",
+          "player-metadata" : {
+            "@player-key" : "83548",
+            "@uniform-number" : "18",
+            "@position-regular" : "midfielder",
+            "@status" : "starter",
+            "name" : {
+              "@last" : "Kolomejtsev",
+              "@abbreviation" : "Kolomejtsev",
+              "@first" : "Aleksandr",
+              "@full" : "Aleksandr Kolomejtsev"
+            },
+            "player-metadata-soccer" : {
+              "@line-formation-position" : "10"
+            }
+          },
+          "player-stats" : {
+            "@time-played-total" : "90",
+            "@events-started" : "1",
+            "@team-coverage" : "single-team",
+            "@date-coverage-type" : "event",
+            "player-stats-soccer" : {
+              "@touches" : "36",
+              "stats-soccer-offensive" : {
+                "@tackles-won" : "1",
+                "@passes-complete" : "21",
+                "@passes-total" : "25",
+                "@tackles-total" : "1",
+                "@tackles-lost" : "0",
+                "@passes-incomplete" : "4",
+                "@passes-complete-3rd-final" : "3"
+              },
+              "stats-soccer-defensive" : {
+                "@goals-against-total" : "1",
+                "@interceptions" : "1"
+              },
+              "stats-soccer-foul" : {
+                "@fouls-suffered" : "2"
+              }
+            }
+          }
+        }, {
+          "@id" : "p.27752",
+          "player-metadata" : {
+            "@player-key" : "27752",
+            "@uniform-number" : "3",
+            "@position-regular" : "midfielder",
+            "@status" : "starter",
+            "name" : {
+              "@last" : "Kasaev",
+              "@abbreviation" : "Kasaev",
+              "@first" : "Alan",
+              "@full" : "Alan Kasaev"
+            },
+            "player-metadata-soccer" : {
+              "@line-formation-position" : "11"
+            }
+          },
+          "player-stats" : {
+            "@time-played-total" : "88",
+            "@events-started" : "1",
+            "@team-coverage" : "single-team",
+            "@date-coverage-type" : "event",
+            "player-stats-soccer" : {
+              "@touches" : "50",
+              "stats-soccer-offensive" : {
+                "@goals-total" : "1",
+                "@shots-total" : "3",
+                "@goals-right-foot" : "0",
+                "@passes-incomplete" : "6",
+                "@passes-complete" : "20",
+                "@passes-complete-long" : "3",
+                "@crosses-18-yard" : "1",
+                "@passes-total" : "26",
+                "@goals-left-foot" : "0",
+                "@shots-on-goal-total" : "1",
+                "@passes-complete-3rd-final" : "10",
+                "@crosses-18-yard-plus" : "3",
+                "@goals-head" : "0",
+                "@shots-off-goal-total" : "2"
+              },
+              "stats-soccer-defensive" : {
+                "@goals-against-total" : "1"
+              },
+              "stats-soccer-foul" : {
+                "@fouls-suffered" : "4",
+                "@fouls-commited" : "4"
+              }
+            }
+          }
+        }, {
+          "@id" : "p.113688",
+          "player-metadata" : {
+            "@player-key" : "113688",
+            "@uniform-number" : "21",
+            "@position-regular" : "forward",
+            "@status" : "starter",
+            "name" : {
+              "@last" : "Niasse",
+              "@abbreviation" : "Niasse",
+              "@first" : "Oumar",
+              "@full" : "Oumar Niasse"
+            },
+            "player-metadata-soccer" : {
+              "@line-formation-position" : "9"
+            }
+          },
+          "player-stats" : {
+            "@time-played-total" : "71",
+            "@events-started" : "1",
+            "@team-coverage" : "single-team",
+            "@date-coverage-type" : "event",
+            "player-stats-soccer" : {
+              "@touches" : "35",
+              "stats-soccer-offensive" : {
+                "@tackles-won" : "1",
+                "@goals-total" : "1",
+                "@shots-total" : "4",
+                "@tackles-total" : "2",
+                "@tackles-lost" : "1",
+                "@goals-right-foot" : "0",
+                "@passes-incomplete" : "3",
+                "@passes-complete" : "15",
+                "@crosses-18-yard" : "1",
+                "@passes-total" : "18",
+                "@goals-left-foot" : "0",
+                "@shots-on-goal-total" : "2",
+                "@passes-complete-3rd-final" : "7",
+                "@goals-head" : "0",
+                "@shots-off-goal-total" : "2"
+              },
+              "stats-soccer-defensive" : {
+                "@goals-against-total" : "1"
+              },
+              "stats-soccer-foul" : {
+                "@fouls-commited" : "1"
+              }
+            }
+          }
+        }, {
+          "@id" : "p.26909",
+          "player-metadata" : {
+            "@player-key" : "26909",
+            "@uniform-number" : "4",
+            "@position-regular" : "midfielder",
+            "@status" : "bench",
+            "name" : {
+              "@last" : "Fernandes",
+              "@abbreviation" : "Fernandes",
+              "@first" : "Manuel",
+              "@full" : "Manuel Fernandes"
+            },
+            "player-metadata-soccer" : {
+              "@line-formation-position" : "0"
+            }
+          }
+        }, {
+          "@id" : "p.51586",
+          "player-metadata" : {
+            "@player-key" : "51586",
+            "@uniform-number" : "7",
+            "@position-regular" : "forward",
+            "@status" : "bench",
+            "name" : {
+              "@last" : "Marqués Bitencourt",
+              "@abbreviation" : "Marqués Bitencourt",
+              "@first" : "Maicón",
+              "@full" : "Maicón"
+            },
+            "player-metadata-soccer" : {
+              "@line-formation-position" : "0"
+            }
+          },
+          "player-stats" : {
+            "@time-played-total" : "19",
+            "@team-coverage" : "single-team",
+            "@date-coverage-type" : "event",
+            "player-stats-soccer" : {
+              "@touches" : "16",
+              "stats-soccer-offensive" : {
+                "@tackles-won" : "1",
+                "@passes-complete" : "8",
+                "@passes-complete-long" : "2",
+                "@shots-total" : "1",
+                "@passes-total" : "10",
+                "@tackles-total" : "1",
+                "@tackles-lost" : "0",
+                "@shots-on-goal-total" : "1",
+                "@passes-incomplete" : "2",
+                "@passes-complete-3rd-final" : "4"
+              },
+              "stats-soccer-defensive" : {
+                "@goals-against-total" : "0"
+              },
+              "stats-soccer-foul" : {
+                "@fouls-commited" : "1"
+              }
+            }
+          }
+        }, {
+          "@id" : "p.51039",
+          "player-metadata" : {
+            "@player-key" : "51039",
+            "@uniform-number" : "9",
+            "@position-regular" : "forward",
+            "@status" : "bench",
+            "name" : {
+              "@last" : "Grigoriev",
+              "@abbreviation" : "Grigoriev",
+              "@first" : "Maksim",
+              "@full" : "Maksim Grigoriev"
+            },
+            "player-metadata-soccer" : {
+              "@line-formation-position" : "0"
+            }
+          }
+        }, {
+          "@id" : "p.60396",
+          "player-metadata" : {
+            "@player-key" : "60396",
+            "@uniform-number" : "15",
+            "@position-regular" : "defender",
+            "@status" : "bench",
+            "name" : {
+              "@last" : "Logashov",
+              "@abbreviation" : "Logashov",
+              "@first" : "Arseni",
+              "@full" : "Arseni Logashov"
+            },
+            "player-metadata-soccer" : {
+              "@line-formation-position" : "0"
+            }
+          }
+        }, {
+          "@id" : "p.39449",
+          "player-metadata" : {
+            "@player-key" : "39449",
+            "@uniform-number" : "17",
+            "@position-regular" : "midfielder",
+            "@status" : "bench",
+            "name" : {
+              "@last" : "Mykhalyk",
+              "@abbreviation" : "Mykhalyk",
+              "@first" : "Taras",
+              "@full" : "Taras Mykhalyk"
+            },
+            "player-metadata-soccer" : {
+              "@line-formation-position" : "0"
+            }
+          },
+          "player-stats" : {
+            "@time-played-total" : "45",
+            "@team-coverage" : "single-team",
+            "@date-coverage-type" : "event",
+            "player-stats-soccer" : {
+              "@touches" : "28",
+              "stats-soccer-offensive" : {
+                "@tackles-won" : "0",
+                "@passes-complete" : "14",
+                "@passes-total" : "17",
+                "@tackles-total" : "1",
+                "@tackles-lost" : "1",
+                "@passes-incomplete" : "3",
+                "@passes-complete-3rd-final" : "1"
+              },
+              "stats-soccer-defensive" : {
+                "@goals-against-total" : "0",
+                "@clearances-successful" : "2",
+                "@interceptions" : "4"
+              },
+              "stats-soccer-foul" : {
+                "@fouls-suffered" : "1",
+                "@fouls-commited" : "1"
+              }
+            }
+          }
+        }, {
+          "@id" : "p.68862",
+          "player-metadata" : {
+            "@player-key" : "68862",
+            "@uniform-number" : "32",
+            "@position-regular" : "forward",
+            "@status" : "bench",
+            "name" : {
+              "@last" : "Skuletic",
+              "@abbreviation" : "Skuletic",
+              "@first" : "Petar",
+              "@full" : "Petar Skuletic"
+            },
+            "player-metadata-soccer" : {
+              "@line-formation-position" : "0"
+            }
+          }
+        }, {
+          "@id" : "p.161956",
+          "player-metadata" : {
+            "@player-key" : "161956",
+            "@uniform-number" : "36",
+            "@position-regular" : "midfielder",
+            "@status" : "bench",
+            "name" : {
+              "@last" : "Barinov",
+              "@abbreviation" : "Barinov",
+              "@first" : "Dimitri",
+              "@full" : "Dimitri Barinov"
+            },
+            "player-metadata-soccer" : {
+              "@line-formation-position" : "0"
+            }
+          }
+        }, {
+          "@id" : "p.161941",
+          "player-metadata" : {
+            "@player-key" : "161941",
+            "@uniform-number" : "52",
+            "@position-regular" : "defender",
+            "@status" : "bench",
+            "name" : {
+              "@last" : "Makarov",
+              "@abbreviation" : "Makarov",
+              "@first" : "Sergei",
+              "@full" : "Sergei Makarov"
+            },
+            "player-metadata-soccer" : {
+              "@line-formation-position" : "0"
+            }
+          }
+        }, {
+          "@id" : "p.50330",
+          "player-metadata" : {
+            "@player-key" : "50330",
+            "@uniform-number" : "55",
+            "@position-regular" : "defender",
+            "@status" : "bench",
+            "name" : {
+              "@last" : "Yanbayev",
+              "@abbreviation" : "Yanbayev",
+              "@first" : "Renat",
+              "@full" : "Renat Yanbayev"
+            },
+            "player-metadata-soccer" : {
+              "@line-formation-position" : "0"
+            }
+          },
+          "player-stats" : {
+            "@time-played-total" : "2",
+            "@team-coverage" : "single-team",
+            "@date-coverage-type" : "event",
+            "player-stats-soccer" : {
+              "@touches" : "6",
+              "stats-soccer-offensive" : {
+                "@passes-complete" : "5",
+                "@passes-total" : "6",
+                "@passes-incomplete" : "1",
+                "@passes-complete-3rd-final" : "3"
+              },
+              "stats-soccer-defensive" : {
+                "@goals-against-total" : "0"
+              },
+              "stats-soccer-foul" : null
+            }
+          }
+        }, {
+          "@id" : "p.160174",
+          "player-metadata" : {
+            "@player-key" : "160174",
+            "@uniform-number" : "59",
+            "@position-regular" : "midfielder",
+            "@status" : "bench",
+            "name" : {
+              "@last" : "Miranchuk",
+              "@abbreviation" : "Miranchuk",
+              "@first" : "Aleksey",
+              "@full" : "Aleksey Miranchuk"
+            },
+            "player-metadata-soccer" : {
+              "@line-formation-position" : "0"
+            }
+          }
+        }, {
+          "@id" : "p.48350",
+          "player-metadata" : {
+            "@player-key" : "48350",
+            "@uniform-number" : "77",
+            "@position-regular" : "goalkeeper",
+            "@status" : "bench",
+            "name" : {
+              "@last" : "Kochenkov",
+              "@abbreviation" : "Kochenkov",
+              "@first" : "Anton",
+              "@full" : "Anton Kochenkov"
+            },
+            "player-metadata-soccer" : {
+              "@line-formation-position" : "0"
+            }
+          }
+        }, {
+          "@id" : "p.81141",
+          "player-metadata" : {
+            "@player-key" : "81141",
+            "@uniform-number" : "81",
+            "@position-regular" : "goalkeeper",
+            "@status" : "bench",
+            "name" : {
+              "@last" : "Abayev",
+              "@abbreviation" : "Abayev",
+              "@first" : "Ilya",
+              "@full" : "Ilya Abayev"
+            },
+            "player-metadata-soccer" : {
+              "@line-formation-position" : "0"
+            }
+          }
+        } ],
+        "associate" : [ {
+          "@id" : "man44778",
+          "associate-metadata" : {
+            "@position-source" : "optasports.com",
+            "@position" : "Manager",
+            "@associate-key" : "man44778",
+            "name" : {
+              "@last" : "Cherevchenko",
+              "@abbreviation" : "Cherevchenko",
+              "@first" : "Igor",
+              "@full" : "Igor Cherevchenko"
+            }
+          }
+        } ]
+      }, {
+        "@id" : "e.809979-t.4169",
+        "team-metadata" : {
+          "@team-key" : "4169",
+          "@alignment" : "away",
+          "name" : {
+            "@nickname" : "FK Krasnodar",
+            "@abbreviation" : "FK Krasnodar",
+            "@first" : "FK Krasnodar",
+            "@full" : "FK Krasnodar"
+          }
+        },
+        "team-stats" : {
+          "@score" : "1",
+          "@score-opposing" : "2",
+          "@time-of-possession-percentage" : "54.1",
+          "@event-outcome" : "loss",
+          "sub-score" : [ {
+            "@score" : "1",
+            "@period-value" : "1"
+          }, {
+            "@score" : "0",
+            "@period-value" : "2"
+          } ],
+          "team-stats-soccer" : {
+            "@line-formation" : "433",
+            "stats-soccer-offensive" : {
+              "@corner-kicks" : "3",
+              "@shots-total" : "10",
+              "@shots-on-goal-total" : "3"
+            },
+            "stats-soccer-foul" : {
+              "@fouls-commited" : "17"
+            }
+          }
+        },
+        "player" : [ {
+          "@id" : "p.52257",
+          "player-metadata" : {
+            "@player-key" : "52257",
+            "@uniform-number" : "31",
+            "@position-regular" : "goalkeeper",
+            "@status" : "starter",
+            "name" : {
+              "@last" : "Dikan",
+              "@abbreviation" : "Dikan",
+              "@first" : "Andrey",
+              "@full" : "Andrey Dikan"
+            },
+            "player-metadata-soccer" : {
+              "@line-formation-position" : "1"
+            }
+          },
+          "player-stats" : {
+            "@time-played-total" : "90",
+            "@events-started" : "1",
+            "@team-coverage" : "single-team",
+            "@date-coverage-type" : "event",
+            "player-stats-soccer" : {
+              "@touches" : "37",
+              "stats-soccer-offensive" : {
+                "@passes-complete" : "22",
+                "@passes-complete-long" : "13",
+                "@passes-total" : "29",
+                "@passes-incomplete" : "7",
+                "@passes-complete-3rd-final" : "3"
+              },
+              "stats-soccer-defensive" : {
+                "@goals-against-total" : "2",
+                "@saves" : "2",
+                "@save-percentage" : "0.500"
+              },
+              "stats-soccer-foul" : {
+                "@fouls-suffered" : "1"
+              }
+            }
+          }
+        }, {
+          "@id" : "p.51092",
+          "player-metadata" : {
+            "@player-key" : "51092",
+            "@uniform-number" : "17",
+            "@position-regular" : "defender",
+            "@status" : "starter",
+            "name" : {
+              "@last" : "Kaleshin",
+              "@abbreviation" : "Kaleshin",
+              "@first" : "Vitaliy",
+              "@full" : "Vitaliy Kaleshin"
+            },
+            "player-metadata-soccer" : {
+              "@line-formation-position" : "2"
+            }
+          },
+          "player-stats" : {
+            "@time-played-total" : "90",
+            "@events-started" : "1",
+            "@team-coverage" : "single-team",
+            "@date-coverage-type" : "event",
+            "player-stats-soccer" : {
+              "@touches" : "82",
+              "@aerials-won" : "2",
+              "stats-soccer-offensive" : {
+                "@tackles-won" : "1",
+                "@passes-complete" : "31",
+                "@passes-complete-long" : "3",
+                "@crosses-18-yard" : "4",
+                "@passes-total" : "43",
+                "@tackles-total" : "5",
+                "@tackles-lost" : "4",
+                "@passes-incomplete" : "12",
+                "@passes-complete-3rd-final" : "18",
+                "@crosses-18-yard-plus" : "2"
+              },
+              "stats-soccer-defensive" : {
+                "@goals-against-total" : "2",
+                "@clearances-successful" : "3",
+                "@interceptions" : "4"
+              },
+              "stats-soccer-foul" : {
+                "@fouls-suffered" : "1",
+                "@fouls-commited" : "4"
+              }
+            }
+          }
+        }, {
+          "@id" : "p.42507",
+          "player-metadata" : {
+            "@player-key" : "42507",
+            "@uniform-number" : "27",
+            "@position-regular" : "defender",
+            "@status" : "starter",
+            "name" : {
+              "@last" : "Sigurdsson",
+              "@abbreviation" : "Sigurdsson",
+              "@first" : "Ragnar",
+              "@full" : "Ragnar Sigurdsson"
+            },
+            "player-metadata-soccer" : {
+              "@line-formation-position" : "5"
+            }
+          },
+          "player-stats" : {
+            "@time-played-total" : "90",
+            "@events-started" : "1",
+            "@team-coverage" : "single-team",
+            "@date-coverage-type" : "event",
+            "player-stats-soccer" : {
+              "@touches" : "43",
+              "stats-soccer-offensive" : {
+                "@tackles-won" : "0",
+                "@passes-complete" : "30",
+                "@passes-complete-long" : "2",
+                "@passes-total" : "33",
+                "@tackles-total" : "1",
+                "@tackles-lost" : "1",
+                "@passes-incomplete" : "3",
+                "@passes-complete-3rd-final" : "4"
+              },
+              "stats-soccer-defensive" : {
+                "@goals-against-total" : "2",
+                "@clearances-successful" : "2",
+                "@interceptions" : "3"
+              },
+              "stats-soccer-foul" : null
+            }
+          }
+        }, {
+          "@id" : "p.37146",
+          "player-metadata" : {
+            "@player-key" : "37146",
+            "@uniform-number" : "6",
+            "@position-regular" : "defender",
+            "@status" : "starter",
+            "name" : {
+              "@last" : "Granqvist",
+              "@abbreviation" : "Granqvist",
+              "@first" : "Andreas",
+              "@full" : "Andreas Granqvist"
+            },
+            "player-metadata-soccer" : {
+              "@line-formation-position" : "6"
+            }
+          },
+          "player-stats" : {
+            "@time-played-total" : "90",
+            "@events-started" : "1",
+            "@team-coverage" : "single-team",
+            "@date-coverage-type" : "event",
+            "player-stats-soccer" : {
+              "@touches" : "63",
+              "@aerials-won" : "5",
+              "stats-soccer-offensive" : {
+                "@tackles-won" : "4",
+                "@passes-complete" : "40",
+                "@passes-complete-long" : "6",
+                "@shots-total" : "1",
+                "@passes-total" : "43",
+                "@tackles-total" : "4",
+                "@tackles-lost" : "0",
+                "@passes-incomplete" : "3",
+                "@passes-complete-3rd-final" : "4",
+                "@shots-off-goal-total" : "1"
+              },
+              "stats-soccer-defensive" : {
+                "@goals-against-total" : "2",
+                "@clearances-successful" : "3",
+                "@interceptions" : "4"
+              },
+              "stats-soccer-foul" : {
+                "@fouls-suffered" : "1",
+                "@fouls-commited" : "2"
+              }
+            }
+          }
+        }, {
+          "@id" : "p.61679",
+          "player-metadata" : {
+            "@player-key" : "61679",
+            "@uniform-number" : "98",
+            "@position-regular" : "defender",
+            "@status" : "starter",
+            "name" : {
+              "@last" : "Petrov",
+              "@abbreviation" : "Petrov",
+              "@first" : "Sergei",
+              "@full" : "Sergei Petrov"
+            },
+            "player-metadata-soccer" : {
+              "@line-formation-position" : "3"
+            }
+          },
+          "player-stats" : {
+            "@time-played-total" : "90",
+            "@events-started" : "1",
+            "@team-coverage" : "single-team",
+            "@date-coverage-type" : "event",
+            "player-stats-soccer" : {
+              "@touches" : "57",
+              "@aerials-won" : "1",
+              "stats-soccer-offensive" : {
+                "@tackles-won" : "1",
+                "@passes-complete" : "30",
+                "@shots-total" : "1",
+                "@crosses-18-yard" : "1",
+                "@passes-total" : "34",
+                "@tackles-total" : "1",
+                "@tackles-lost" : "0",
+                "@passes-incomplete" : "4",
+                "@passes-complete-3rd-final" : "10",
+                "@shots-off-goal-total" : "1"
+              },
+              "stats-soccer-defensive" : {
+                "@goals-against-total" : "2",
+                "@clearances-successful" : "4",
+                "@interceptions" : "3"
+              },
+              "stats-soccer-foul" : {
+                "@fouls-suffered" : "2"
+              }
+            }
+          }
+        }, {
+          "@id" : "p.166015",
+          "player-metadata" : {
+            "@player-key" : "166015",
+            "@uniform-number" : "8",
+            "@position-regular" : "midfielder",
+            "@status" : "starter",
+            "name" : {
+              "@last" : "Gazinskiy",
+              "@abbreviation" : "Gazinskiy",
+              "@first" : "Yuri",
+              "@full" : "Yuri Gazinskiy"
+            },
+            "player-metadata-soccer" : {
+              "@line-formation-position" : "7"
+            }
+          },
+          "player-stats" : {
+            "@time-played-total" : "61",
+            "@events-started" : "1",
+            "@team-coverage" : "single-team",
+            "@date-coverage-type" : "event",
+            "player-stats-soccer" : {
+              "@touches" : "56",
+              "@aerials-won" : "1",
+              "stats-soccer-offensive" : {
+                "@tackles-won" : "2",
+                "@passes-complete" : "33",
+                "@passes-complete-long" : "1",
+                "@assists-total" : "1",
+                "@passes-total" : "44",
+                "@tackles-total" : "2",
+                "@tackles-lost" : "0",
+                "@passes-incomplete" : "11",
+                "@passes-complete-3rd-final" : "8",
+                "@crosses-18-yard-plus" : "2"
+              },
+              "stats-soccer-defensive" : {
+                "@goals-against-total" : "2",
+                "@interceptions" : "1"
+              },
+              "stats-soccer-foul" : {
+                "@fouls-suffered" : "1",
+                "@fouls-commited" : "3",
+                "@cautions-total" : "1"
+              }
+            }
+          }
+        }, {
+          "@id" : "p.61966",
+          "player-metadata" : {
+            "@player-key" : "61966",
+            "@uniform-number" : "3",
+            "@position-regular" : "midfielder",
+            "@status" : "starter",
+            "name" : {
+              "@last" : "Strandberg",
+              "@abbreviation" : "Strandberg",
+              "@first" : "Stefan",
+              "@full" : "Stefan Strandberg"
+            },
+            "player-metadata-soccer" : {
+              "@line-formation-position" : "4"
+            }
+          },
+          "player-stats" : {
+            "@time-played-total" : "90",
+            "@events-started" : "1",
+            "@team-coverage" : "single-team",
+            "@date-coverage-type" : "event",
+            "player-stats-soccer" : {
+              "@touches" : "103",
+              "stats-soccer-offensive" : {
+                "@tackles-won" : "3",
+                "@passes-complete" : "67",
+                "@passes-complete-long" : "2",
+                "@passes-total" : "89",
+                "@tackles-total" : "4",
+                "@tackles-lost" : "1",
+                "@passes-incomplete" : "22",
+                "@passes-complete-3rd-final" : "19",
+                "@crosses-18-yard-plus" : "2"
+              },
+              "stats-soccer-defensive" : {
+                "@goals-against-total" : "2",
+                "@shots-blocked-outfielder" : "1",
+                "@clearances-successful" : "3",
+                "@interceptions" : "2"
+              },
+              "stats-soccer-foul" : {
+                "@fouls-commited" : "2",
+                "@cautions-total" : "1"
+              }
+            }
+          }
+        }, {
+          "@id" : "p.47435",
+          "player-metadata" : {
+            "@player-key" : "47435",
+            "@uniform-number" : "7",
+            "@position-regular" : "midfielder",
+            "@status" : "starter",
+            "name" : {
+              "@last" : "Mamaev",
+              "@abbreviation" : "Mamaev",
+              "@first" : "Pavel",
+              "@full" : "Pavel Mamaev"
+            },
+            "player-metadata-soccer" : {
+              "@line-formation-position" : "8"
+            }
+          },
+          "player-stats" : {
+            "@time-played-total" : "90",
+            "@events-started" : "1",
+            "@team-coverage" : "single-team",
+            "@date-coverage-type" : "event",
+            "player-stats-soccer" : {
+              "@touches" : "49",
+              "stats-soccer-offensive" : {
+                "@tackles-won" : "1",
+                "@passes-complete" : "34",
+                "@passes-complete-long" : "3",
+                "@shots-total" : "1",
+                "@passes-total" : "39",
+                "@tackles-total" : "1",
+                "@tackles-lost" : "0",
+                "@passes-incomplete" : "5",
+                "@passes-complete-3rd-final" : "16",
+                "@shots-off-goal-total" : "1"
+              },
+              "stats-soccer-defensive" : {
+                "@goals-against-total" : "2"
+              },
+              "stats-soccer-foul" : {
+                "@fouls-commited" : "2"
+              }
+            }
+          }
+        }, {
+          "@id" : "p.57155",
+          "player-metadata" : {
+            "@player-key" : "57155",
+            "@uniform-number" : "21",
+            "@position-regular" : "forward",
+            "@status" : "starter",
+            "name" : {
+              "@last" : "Laborde",
+              "@abbreviation" : "Laborde",
+              "@first" : "Ricardo",
+              "@full" : "Ricardo Laborde"
+            },
+            "player-metadata-soccer" : {
+              "@line-formation-position" : "10"
+            }
+          },
+          "player-stats" : {
+            "@time-played-total" : "45",
+            "@events-started" : "1",
+            "@team-coverage" : "single-team",
+            "@date-coverage-type" : "event",
+            "player-stats-soccer" : {
+              "@touches" : "26",
+              "stats-soccer-offensive" : {
+                "@passes-complete" : "8",
+                "@passes-total" : "15",
+                "@passes-incomplete" : "7",
+                "@passes-complete-3rd-final" : "6"
+              },
+              "stats-soccer-defensive" : {
+                "@goals-against-total" : "1"
+              },
+              "stats-soccer-foul" : {
+                "@fouls-suffered" : "3",
+                "@fouls-commited" : "2",
+                "@cautions-total" : "1"
+              }
+            }
+          }
+        }, {
+          "@id" : "p.42515",
+          "player-metadata" : {
+            "@player-key" : "42515",
+            "@uniform-number" : "9",
+            "@position-regular" : "forward",
+            "@status" : "starter",
+            "name" : {
+              "@last" : "da Silva Ferreira",
+              "@abbreviation" : "da Silva Ferreira",
+              "@first" : "Ariclenes",
+              "@full" : "Ari"
+            },
+            "player-metadata-soccer" : {
+              "@line-formation-position" : "9"
+            }
+          },
+          "player-stats" : {
+            "@time-played-total" : "67",
+            "@events-started" : "1",
+            "@team-coverage" : "single-team",
+            "@date-coverage-type" : "event",
+            "player-stats-soccer" : {
+              "@touches" : "34",
+              "stats-soccer-offensive" : {
+                "@passes-complete" : "18",
+                "@passes-complete-long" : "1",
+                "@passes-total" : "24",
+                "@passes-incomplete" : "6",
+                "@passes-complete-3rd-final" : "6",
+                "@crosses-18-yard-plus" : "1"
+              },
+              "stats-soccer-defensive" : {
+                "@goals-against-total" : "2",
+                "@shots-blocked-outfielder" : "1",
+                "@clearances-successful" : "1"
+              },
+              "stats-soccer-foul" : {
+                "@fouls-suffered" : "1",
+                "@fouls-commited" : "2"
+              }
+            }
+          }
+        }, {
+          "@id" : "p.51129",
+          "player-metadata" : {
+            "@player-key" : "51129",
+            "@uniform-number" : "90",
+            "@position-regular" : "forward",
+            "@status" : "starter",
+            "name" : {
+              "@last" : "Smolov",
+              "@abbreviation" : "Smolov",
+              "@first" : "Fedor",
+              "@full" : "Fedor Smolov"
+            },
+            "player-metadata-soccer" : {
+              "@line-formation-position" : "11"
+            }
+          },
+          "player-stats" : {
+            "@time-played-total" : "90",
+            "@events-started" : "1",
+            "@team-coverage" : "single-team",
+            "@date-coverage-type" : "event",
+            "player-stats-soccer" : {
+              "@touches" : "60",
+              "@aerials-won" : "2",
+              "stats-soccer-offensive" : {
+                "@tackles-won" : "1",
+                "@goals-total" : "1",
+                "@shots-total" : "4",
+                "@tackles-total" : "1",
+                "@tackles-lost" : "0",
+                "@goals-right-foot" : "0",
+                "@passes-incomplete" : "13",
+                "@passes-complete" : "28",
+                "@passes-complete-long" : "1",
+                "@passes-total" : "41",
+                "@goals-left-foot" : "0",
+                "@shots-on-goal-total" : "3",
+                "@passes-complete-3rd-final" : "5",
+                "@crosses-18-yard-plus" : "1",
+                "@goals-head" : "0",
+                "@shots-off-goal-total" : "1"
+              },
+              "stats-soccer-defensive" : {
+                "@goals-against-total" : "2"
+              },
+              "stats-soccer-foul" : {
+                "@fouls-suffered" : "2"
+              }
+            }
+          }
+        }, {
+          "@id" : "p.15104",
+          "player-metadata" : {
+            "@player-key" : "15104",
+            "@uniform-number" : "4",
+            "@position-regular" : "midfielder",
+            "@status" : "bench",
+            "name" : {
+              "@last" : "Torbinski",
+              "@abbreviation" : "Torbinski",
+              "@first" : "Dmitri",
+              "@full" : "Dmitri Torbinski"
+            },
+            "player-metadata-soccer" : {
+              "@line-formation-position" : "0"
+            }
+          }
+        }, {
+          "@id" : "p.71383",
+          "player-metadata" : {
+            "@player-key" : "71383",
+            "@uniform-number" : "5",
+            "@position-regular" : "defender",
+            "@status" : "bench",
+            "name" : {
+              "@last" : "Jedrzejczyk",
+              "@abbreviation" : "Jedrzejczyk",
+              "@first" : "Artur",
+              "@full" : "Artur Jedrzejczyk"
+            },
+            "player-metadata-soccer" : {
+              "@line-formation-position" : "0"
+            }
+          }
+        }, {
+          "@id" : "p.79030",
+          "player-metadata" : {
+            "@player-key" : "79030",
+            "@uniform-number" : "10",
+            "@position-regular" : "midfielder",
+            "@status" : "bench",
+            "name" : {
+              "@last" : "Ahmedov",
+              "@abbreviation" : "Ahmedov",
+              "@first" : "Odil",
+              "@full" : "Odil Ahmedov"
+            },
+            "player-metadata-soccer" : {
+              "@line-formation-position" : "0"
+            }
+          },
+          "player-stats" : {
+            "@time-played-total" : "29",
+            "@team-coverage" : "single-team",
+            "@date-coverage-type" : "event",
+            "player-stats-soccer" : {
+              "@touches" : "41",
+              "stats-soccer-offensive" : {
+                "@tackles-won" : "1",
+                "@passes-complete" : "27",
+                "@passes-complete-long" : "3",
+                "@shots-total" : "1",
+                "@passes-total" : "30",
+                "@tackles-total" : "1",
+                "@tackles-lost" : "0",
+                "@passes-incomplete" : "3",
+                "@passes-complete-3rd-final" : "12",
+                "@crosses-18-yard-plus" : "1",
+                "@shots-off-goal-total" : "1"
+              },
+              "stats-soccer-defensive" : {
+                "@goals-against-total" : "0",
+                "@interceptions" : "1"
+              },
+              "stats-soccer-foul" : {
+                "@fouls-suffered" : "3"
+              }
+            }
+          }
+        }, {
+          "@id" : "p.112363",
+          "player-metadata" : {
+            "@player-key" : "112363",
+            "@uniform-number" : "14",
+            "@position-regular" : "forward",
+            "@status" : "bench",
+            "name" : {
+              "@last" : "do Carmo Carneiro",
+              "@abbreviation" : "do Carmo Carneiro",
+              "@first" : "Wanderson",
+              "@full" : "Wanderson"
+            },
+            "player-metadata-soccer" : {
+              "@line-formation-position" : "0"
+            }
+          },
+          "player-stats" : {
+            "@time-played-total" : "23",
+            "@team-coverage" : "single-team",
+            "@date-coverage-type" : "event",
+            "player-stats-soccer" : {
+              "@touches" : "7",
+              "stats-soccer-offensive" : {
+                "@passes-complete" : "3",
+                "@passes-total" : "4",
+                "@passes-incomplete" : "1",
+                "@passes-complete-3rd-final" : "1"
+              },
+              "stats-soccer-defensive" : {
+                "@goals-against-total" : "0"
+              },
+              "stats-soccer-foul" : null
+            }
+          }
+        }, {
+          "@id" : "p.69756",
+          "player-metadata" : {
+            "@player-key" : "69756",
+            "@uniform-number" : "15",
+            "@position-regular" : "defender",
+            "@status" : "bench",
+            "name" : {
+              "@last" : "Markov",
+              "@abbreviation" : "Markov",
+              "@first" : "Nikolai",
+              "@full" : "Nikolai Markov"
+            },
+            "player-metadata-soccer" : {
+              "@line-formation-position" : "0"
+            }
+          }
+        }, {
+          "@id" : "p.18051",
+          "player-metadata" : {
+            "@player-key" : "18051",
+            "@uniform-number" : "18",
+            "@position-regular" : "midfielder",
+            "@status" : "bench",
+            "name" : {
+              "@last" : "Bystrov",
+              "@abbreviation" : "Bystrov",
+              "@first" : "Vladimir",
+              "@full" : "Vladimir Bystrov"
+            },
+            "player-metadata-soccer" : {
+              "@line-formation-position" : "0"
+            }
+          },
+          "player-stats" : {
+            "@time-played-total" : "45",
+            "@team-coverage" : "single-team",
+            "@date-coverage-type" : "event",
+            "player-stats-soccer" : {
+              "@touches" : "15",
+              "stats-soccer-offensive" : {
+                "@tackles-won" : "1",
+                "@passes-complete" : "6",
+                "@crosses-18-yard" : "1",
+                "@passes-total" : "8",
+                "@tackles-total" : "1",
+                "@tackles-lost" : "0",
+                "@passes-incomplete" : "2",
+                "@passes-complete-3rd-final" : "5",
+                "@crosses-18-yard-plus" : "1"
+              },
+              "stats-soccer-defensive" : {
+                "@goals-against-total" : "1",
+                "@interceptions" : "1"
+              },
+              "stats-soccer-foul" : null
+            }
+          }
+        }, {
+          "@id" : "p.184224",
+          "player-metadata" : {
+            "@player-key" : "184224",
+            "@uniform-number" : "51",
+            "@position-regular" : "goalkeeper",
+            "@status" : "bench",
+            "name" : {
+              "@last" : "Kavlinov",
+              "@abbreviation" : "Kavlinov",
+              "@first" : "Denis",
+              "@full" : "Denis Kavlinov"
+            },
+            "player-metadata-soccer" : {
+              "@line-formation-position" : "0"
+            }
+          }
+        }, {
+          "@id" : "p.44460",
+          "player-metadata" : {
+            "@player-key" : "44460",
+            "@uniform-number" : "77",
+            "@position-regular" : "midfielder",
+            "@status" : "bench",
+            "name" : {
+              "@last" : "Kaboré",
+              "@abbreviation" : "Kaboré",
+              "@first" : "Charles",
+              "@full" : "Charles Kaboré"
+            },
+            "player-metadata-soccer" : {
+              "@line-formation-position" : "0"
+            }
+          }
+        }, {
+          "@id" : "p.102058",
+          "player-metadata" : {
+            "@player-key" : "102058",
+            "@uniform-number" : "88",
+            "@position-regular" : "goalkeeper",
+            "@status" : "bench",
+            "name" : {
+              "@last" : "Sinitsyn",
+              "@abbreviation" : "Sinitsyn",
+              "@first" : "Andrei",
+              "@full" : "Andrei Sinitsyn"
+            },
+            "player-metadata-soccer" : {
+              "@line-formation-position" : "0"
+            }
+          }
+        } ],
+        "associate" : [ {
+          "@id" : "man38858",
+          "associate-metadata" : {
+            "@position-source" : "optasports.com",
+            "@position" : "Manager",
+            "@associate-key" : "man38858",
+            "name" : {
+              "@last" : "Kononov",
+              "@abbreviation" : "Kononov",
+              "@first" : "Oleg",
+              "@full" : "Oleg Kononov"
+            }
+          }
+        } ]
+      } ],
+      "officials" : {
+        "official" : [ {
+          "official-metadata" : {
+            "@official-key" : "PO42458",
+            "@position" : "main-official",
+            "name" : {
+              "@last" : "Ivanov",
+              "@abbreviation" : "Ivanov",
+              "@first" : "Sergey",
+              "@full" : "Sergey Ivanov"
+            }
+          }
+        } ]
+      },
+      "event-actions" : {
+        "event-actions-soccer" : {
+          "action-soccer-penalty" : [ {
+            "@recipient-type" : "player",
+            "@penalty-type" : "foul",
+            "@period-value" : "1",
+            "@recipient-idref" : "p.57155",
+            "@minutes-elapsed" : "21",
+            "@penalty-level" : "yellow-card",
+            "@team-idref" : "e.809979-t.4169",
+            "@sequence-number" : "0830115246",
+            "@comment" : "Foul",
+            "@id" : "a.174763229"
+          }, {
+            "@recipient-type" : "player",
+            "@penalty-type" : "foul",
+            "@period-value" : "1",
+            "@recipient-idref" : "p.51208",
+            "@minutes-elapsed" : "30",
+            "@penalty-level" : "yellow-card",
+            "@team-idref" : "e.809979-t.271",
+            "@sequence-number" : "0830120114",
+            "@comment" : "Foul",
+            "@id" : "a.2046608111"
+          }, {
+            "@recipient-type" : "player",
+            "@penalty-type" : "dissent",
+            "@period-value" : "1",
+            "@recipient-idref" : "p.38462",
+            "@minutes-elapsed" : "32",
+            "@penalty-level" : "yellow-card",
+            "@team-idref" : "e.809979-t.271",
+            "@sequence-number" : "0830120337",
+            "@comment" : "Dissent",
+            "@id" : "a.1541738032"
+          }, {
+            "@recipient-type" : "player",
+            "@penalty-type" : "foul",
+            "@period-value" : "1",
+            "@recipient-idref" : "p.166015",
+            "@minutes-elapsed" : "34",
+            "@penalty-level" : "yellow-card",
+            "@team-idref" : "e.809979-t.4169",
+            "@sequence-number" : "0830120519",
+            "@comment" : "Foul",
+            "@id" : "a.720932334"
+          }, {
+            "@recipient-type" : "player",
+            "@penalty-type" : "foul",
+            "@period-value" : "1",
+            "@recipient-idref" : "p.61966",
+            "@minutes-elapsed" : "39",
+            "@penalty-level" : "yellow-card",
+            "@team-idref" : "e.809979-t.4169",
+            "@sequence-number" : "0830120957",
+            "@comment" : "Foul",
+            "@id" : "a.1509163336"
+          } ],
+          "action-soccer-score" : [ {
+            "@period-value" : "1",
+            "@minutes-elapsed" : "11",
+            "@team-idref" : "e.809979-t.4169",
+            "@sequence-number" : "0830114207",
+            "@id" : "a.579271644",
+            "@score-attempt-type" : "regular",
+            "action-soccer-play-participant" : [ {
+              "@player-idref" : "PO51129",
+              "@role" : "scorer",
+              "@team-idref" : "e.809979-t.4169"
+            }, {
+              "@player-idref" : "PO166015",
+              "@role" : "assist",
+              "@team-idref" : "e.809979-t.4169"
+            } ]
+          }, {
+            "@period-value" : "1",
+            "@minutes-elapsed" : "18",
+            "@team-idref" : "e.809979-t.271",
+            "@sequence-number" : "0830114911",
+            "@id" : "a.438928909",
+            "@score-attempt-type" : "regular",
+            "action-soccer-play-participant" : [ {
+              "@player-idref" : "PO113688",
+              "@role" : "scorer",
+              "@team-idref" : "e.809979-t.271"
+            } ]
+          }, {
+            "@period-value" : "2",
+            "@minutes-elapsed" : "56",
+            "@team-idref" : "e.809979-t.271",
+            "@sequence-number" : "0830124703",
+            "@id" : "a.433565729",
+            "@score-attempt-type" : "regular",
+            "action-soccer-play-participant" : [ {
+              "@player-idref" : "PO27752",
+              "@role" : "scorer",
+              "@team-idref" : "e.809979-t.271"
+            } ]
+          } ],
+          "action-soccer-substitution" : [ {
+            "@person-replacing-idref" : "PO39449",
+            "@period-value" : "2",
+            "@minutes-elapsed" : "45",
+            "@person-original-idref" : "PO52748",
+            "@substitution-reason" : "Tactical",
+            "@team-idref" : "e.809979-t.271",
+            "@sequence-number" : "0830123534",
+            "@id" : "a.1684050459",
+            "@person-replacing-position" : "midfielder"
+          }, {
+            "@person-replacing-idref" : "PO18051",
+            "@period-value" : "2",
+            "@minutes-elapsed" : "45",
+            "@person-original-idref" : "PO57155",
+            "@substitution-reason" : "Tactical",
+            "@team-idref" : "e.809979-t.4169",
+            "@sequence-number" : "0830123608",
+            "@id" : "a.357938512",
+            "@person-replacing-position" : "midfielder"
+          }, {
+            "@person-replacing-idref" : "PO79030",
+            "@period-value" : "2",
+            "@minutes-elapsed" : "61",
+            "@person-original-idref" : "PO166015",
+            "@substitution-reason" : "Tactical",
+            "@team-idref" : "e.809979-t.4169",
+            "@sequence-number" : "0830125147",
+            "@id" : "a.2127421905",
+            "@person-replacing-position" : "midfielder"
+          }, {
+            "@person-replacing-idref" : "PO112363",
+            "@period-value" : "2",
+            "@minutes-elapsed" : "67",
+            "@person-original-idref" : "PO42515",
+            "@substitution-reason" : "Tactical",
+            "@team-idref" : "e.809979-t.4169",
+            "@sequence-number" : "0830125750",
+            "@id" : "a.456999202",
+            "@person-replacing-position" : "forward"
+          }, {
+            "@person-replacing-idref" : "PO51586",
+            "@period-value" : "2",
+            "@minutes-elapsed" : "71",
+            "@person-original-idref" : "PO113688",
+            "@substitution-reason" : "Tactical",
+            "@team-idref" : "e.809979-t.271",
+            "@sequence-number" : "0830130217",
+            "@id" : "a.800194081",
+            "@person-replacing-position" : "midfielder"
+          }, {
+            "@person-replacing-idref" : "PO50330",
+            "@period-value" : "2",
+            "@minutes-elapsed" : "88",
+            "@person-original-idref" : "PO27752",
+            "@substitution-reason" : "Tactical",
+            "@team-idref" : "e.809979-t.271",
+            "@sequence-number" : "0830131844",
+            "@id" : "a.213976171",
+            "@person-replacing-position" : "defender"
+          } ]
+        }
+      }
+    }
+  }
+}

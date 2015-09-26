@@ -7,6 +7,7 @@ import com.jbjohn.model.Setter;
 /**
  */
 public class MapUtil {
+
     public static Object get(Object map, String key) {
         Object response = null;
         try {

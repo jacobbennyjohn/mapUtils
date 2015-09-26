@@ -45,12 +45,13 @@ public class Getter {
         }
         if (map instanceof Collection) {
             Collection<Object> request = (Collection<Object>) map;
-            ArrayList<Object> response = new ArrayList<>();
+            ArrayList<Object> response = new ArrayList<Object>();
             for (Object item : request) {
                 response.add(item);
             }
             return response.get(0);
         }
+        System.out.println("no in any" + map.getClass().getName());
         return map;
     }
 
