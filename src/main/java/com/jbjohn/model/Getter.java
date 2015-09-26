@@ -9,49 +9,54 @@ import java.util.*;
 public class Getter {
 
     private static Object search(Object map, String key) {
-        String predicate = "";
-
-        if (key.startsWith("?")) {
-            predicate = key.substring(1);
-        }
+        String predicate = Generic.getPredicate(key);
 
         if (map instanceof HashMap) {
-            HashMap<String, Object> request = (HashMap<String, Object>) map;
-            if (key.equals("*")) {
-                return request.values();
-            }
-            return request.get(key);
+            return search((HashMap<String, Object>) map, key);
         }
         if (map instanceof ArrayList) {
-            ArrayList request = (ArrayList) map;
-            if (key.equals("*")) {
-                return request;
-            }
-            if (!predicate.equals("")) {
-                return processPredicate(request, predicate);
-            }
-            if (key.matches("^-?\\d+$")) {
-                int index = Integer.parseInt(key);
-                return request.get(index);
-            }
-            ArrayList response = new ArrayList();
-            for (Object item : request) {
-                Map<String, Object> itemMap = (Map<String, Object>) item;
-                if (itemMap.containsKey(key)) {
-                    response.add(itemMap.get(key));
-                }
-            }
-            return response;
+            return search((ArrayList) map, key, predicate);
         }
         if (map instanceof Collection) {
-            Collection<Object> request = (Collection<Object>) map;
-            ArrayList<Object> response = new ArrayList<Object>();
-            for (Object item : request) {
-                response.add(item);
-            }
-            return response.get(0);
+            search((Collection<Object>) map);
         }
         return map;
+    }
+
+    private static Object search(HashMap<String, Object> map, String key) {
+        if (key.equals("*")) {
+            return map.values();
+        }
+        return map.get(key);
+    }
+
+    private static Object search(ArrayList map, String key, String predicate) {
+        if (key.equals("*")) {
+            return map;
+        }
+        if (!predicate.equals("")) {
+            return processPredicate(map, predicate);
+        }
+        if (key.matches("^-?\\d+$")) {
+            int index = Integer.parseInt(key);
+            return map.get(index);
+        }
+        ArrayList response = new ArrayList();
+        for (Object item : map) {
+            Map<String, Object> itemMap = (Map<String, Object>) item;
+            if (itemMap.containsKey(key)) {
+                response.add(itemMap.get(key));
+            }
+        }
+        return response;
+    }
+
+    private static Object search(Collection map) {
+        ArrayList<Object> response = new ArrayList<Object>();
+        for (Object item : map) {
+            response.add(item);
+        }
+        return response.get(0);
     }
 
     public static Object searchByPath(Object map, String path) {

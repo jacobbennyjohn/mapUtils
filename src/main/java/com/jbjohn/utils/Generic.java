@@ -41,4 +41,11 @@ public class Generic {
         return Arrays.asList(path.split("\\."));
     }
 
+    public static String getPredicate(String key) {
+        String predicate = "";
+        if (key.startsWith("?")) {
+            predicate = key.substring(1);
+        }
+        return predicate;
+    }
 }
