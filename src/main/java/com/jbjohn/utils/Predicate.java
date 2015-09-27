@@ -10,89 +10,98 @@ import java.util.Map;
 public class Predicate {
 
     public enum Operator {
-        EQUALS("==", 1),
-        GREATER_THAN(">", 2),
-        LESSER_THAN("<", 3);
+        DEFAULT("  ") {
+            @Override
+            ArrayList apply(Map<String, Object> request, String key, String value, ArrayList response) {
+                return response;
+            }
+        },
+        EQUALS("==") {
+            @Override
+            ArrayList apply(Map<String, Object> request, String key, String value, ArrayList response) {
+                if (request.get(key).equals(value)) {
+                    response.add(request);
+                }
+                return response;
+            }
+        },
+        GREATER_THAN(">") {
+            @Override
+            ArrayList apply(Map<String, Object> request, String key, String value, ArrayList response) {
+                int valueInt = Generic.getIntValue((String) request.get(key), -1);
+                int predicateInt = Generic.getIntValue(value, -1);
+                if ((valueInt > predicateInt) && (valueInt > -1)) {
+                    response.add(request);
+                }
+                return response;
+            }
+        },
+        LESSER_THAN("<") {
+            @Override
+            ArrayList apply(Map<String, Object> request, String key, String value, ArrayList response) {
+                int valueInt = Generic.getIntValue((String) request.get(key), -1);
+                int predicateInt = Generic.getIntValue(value, -1);
+                if ((valueInt < predicateInt) && (valueInt > -1)) {
+                    response.add(request);
+                }
+                return response;
+            }
+        },
+        NOT_EQUALS("!=") {
+            @Override
+            ArrayList apply(Map<String, Object> request, String key, String value, ArrayList response) {
+                if (!request.get(key).equals(value)) {
+                    response.add(request);
+                }
+                return response;
+            }
+        };
 
         private String operation;
-        private int id;
 
-        Operator(String operation, int id) {
+        Operator(String operation) {
             this.operation = operation;
-            this.id = id;
         }
 
-        public String getOperator() {
+        String getOperator() {
             return operation;
         }
 
-        public int getId() {
-            return id;
-        }
-
-        public static Operator getOperatorById(int id) {
-            for (Operator operator : Operator.values()) {
-                if (operator.getId() == id) {
-                    return operator;
-                }
-            }
-            return null;
-        }
+        abstract ArrayList apply(Map<String, Object> request, String key, String value, ArrayList response);
     }
 
+    private static Operator operator;
     private static String predicateKey = "";
     private static String predicateValue = "";
-    private static int operation = 0;
 
     public static Object process(Object map, String predicate) {
 
-        if (predicate.contains(Operator.EQUALS.getOperator())) {
-            operation = Operator.EQUALS.getId();
-        } else if (predicate.contains(Operator.GREATER_THAN.getOperator())) {
-            operation = Operator.GREATER_THAN.getId();
-        } else if (predicate.contains(Operator.LESSER_THAN.getOperator())) {
-            operation = Operator.LESSER_THAN.getId();
-        }
-
-        List<String> predicateList = Arrays.asList(predicate.split(Operator.getOperatorById(operation).getOperator()));
-        predicateKey = predicateList.get(0);
-        predicateValue = predicateList.get(1);
+        for (Operator operator : Operator.values()) check(operator, predicate);
 
         if (map instanceof ArrayList) {
             ArrayList request = (ArrayList) map;
             ArrayList response = new ArrayList();
-
-            for (Object item : request) {
-                Map<String, Object> itemMap = (Map<String, Object>) item;
-                if (itemMap.containsKey(predicateKey)) {
-
-                    int valueInt = Generic.getIntValue((String) itemMap.get(predicateKey));
-                    int predicateInt = Generic.getIntValue(predicateValue);
-
-                    switch (operation) {
-                        case 1:
-                            if (itemMap.get(predicateKey).equals(predicateValue)) {
-                                response.add(itemMap);
-                            }
-                            break;
-                        case 2:
-                            if (valueInt > predicateInt) {
-                                response.add(itemMap);
-                            }
-                            break;
-                        case 3:
-                            if (valueInt < predicateInt) {
-                                response.add(itemMap);
-                            }
-                            break;
-                        default:
-                            break;
-                    }
-                }
-            }
+            for (Object item : request) apply(operator, item, response);
             return response;
         }
 
         return map;
+    }
+
+    static void check(Operator operator, String predicate) {
+        if (predicate.contains(operator.getOperator())) {
+            List<String> predicateList = Arrays.asList(predicate.split(operator.getOperator()));
+            predicateKey = predicateList.get(0);
+            predicateValue = predicateList.get(1);
+            Predicate.operator = operator;
+        }
+    }
+
+    static ArrayList apply(Operator operator, Object request, ArrayList response) {
+        Map<String, Object> itemMap = (Map<String, Object>) request;
+        if (itemMap.containsKey(predicateKey)) {
+            operator.apply(itemMap, predicateKey, predicateValue, response);
+        }
+        return response;
     }
 }

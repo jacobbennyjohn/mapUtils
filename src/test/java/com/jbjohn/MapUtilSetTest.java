@@ -34,4 +34,12 @@ public class MapUtilSetTest {
         String result = (String) MapUtil.get(map, "$.sports-content.sports-metadata.sports-title");
         Assert.assertEquals(expected, result);
     }
+
+    @Test
+    public void testSetType() throws Exception {
+        int expected = 809979;
+        MapUtil.set(map, "$.sports-content.sports-event.event-metadata.@event-key", expected);
+        int result = Integer.parseInt(MapUtil.get(map, "$.sports-content.sports-event.event-metadata.@event-key").toString());
+        Assert.assertEquals(expected, result);
+    }
 }
