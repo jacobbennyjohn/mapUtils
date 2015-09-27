@@ -59,4 +59,20 @@ public class MapUtilParseTest {
         int result = Integer.parseInt(MapUtil.get(map, "$.sports-content.sports-event.team.[0].team-stats.@score").toString());
         Assert.assertEquals(expected, result);
     }
+
+    @Test
+    public void testParseDouble() throws Exception {
+        Double expected = 45.9;
+        MapUtil.parse(map, "$.sports-content.sports-event.team.[0].team-stats.@time-of-possession-percentage", Caster.Type.DOUBLE);
+        Double result = Double.parseDouble(MapUtil.get(map, "$.sports-content.sports-event.team.[0].team-stats.@time-of-possession-percentage").toString());
+        Assert.assertEquals(expected, result);
+    }
+
+    @Test
+    public void testParseBoolean() throws Exception {
+        Boolean expected = true;
+        MapUtil.parse(map, "$.sports-content.sports-metadata.sports-property.[1].@value", Caster.Type.BOOLEAN);
+        Boolean result = Boolean.parseBoolean(MapUtil.get(map, "$.sports-content.sports-metadata.sports-property.[1].@value").toString());
+        Assert.assertEquals(expected, result);
+    }
 }

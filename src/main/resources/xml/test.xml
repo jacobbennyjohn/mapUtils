@@ -11,7 +11,8 @@
             <sports-content-code code-type="team" code-key="4169"/>
             <sports-content-code code-type="team" code-key="271"/>
         </sports-content-codes>
-        <?xml-multiple sports-property?><sports-property formal-name="compound-key" value="soccer:2015:129:event-stats:809979"/></sports-metadata>
+        <?xml-multiple sports-property?><sports-property formal-name="compound-key" value="soccer:2015:129:event-stats:809979"/>
+        <sports-property formal-name="is-match-completed" value="true"/></sports-metadata>
     <sports-event>
         <event-metadata date-coverage-type="event" event-key="809979" event-status="post-event" event-status-note="Result" start-date-time="2015-08-30T11:30:00+01:00" event-name="Lokomotiv Moscow v FK Krasnodar" event-outcome-type="regular">
             <event-metadata-soccer week="7" minutes-elapsed="90">

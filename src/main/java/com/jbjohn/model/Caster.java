@@ -21,47 +21,61 @@ public class Caster extends InMap {
     public Object getValue(Object value) {
         Object response = value;
         try {
-            switch (type) {
-                case STRING:
-                    if (!(value instanceof String)) {
-                        response = String.valueOf(value);
-                    }
-                    break;
-                case INTEGER:
-                    if (!(value instanceof Integer) && value.toString().matches("^-?\\d+$")) {
-                        response = Integer.parseInt(value.toString());
-                    }
-                    break;
-                case BOOLEAN:
-                    if (!(value instanceof Boolean) && (value.toString().equalsIgnoreCase("true") || value.toString().equalsIgnoreCase("false"))) {
-                        response = Boolean.parseBoolean(value.toString());
-                    }
-                    break;
-                case FLOAT:
-                    if (!(value instanceof Float) && value.toString().matches("^-?\\d+(?:[.]\\d+)$")) {
-                        response = Float.parseFloat(value.toString());
-                    }
-                    break;
-                default:
-                    response = value;
-                    break;
-            }
+            response = type.getValue(value);
         } catch (Exception e) {
-            // TODO log exception
+            e.printStackTrace();
         }
         return response;
     }
 
     public enum Type {
-        STRING("String"),
-        INTEGER("Integer"),
-        BOOLEAN("Boolean"),
-        FLOAT("Float");
+        STRING("String") {
+            @Override
+            Object getValue(Object value) {
+                Object response = value;
+                if (!(value instanceof String)) {
+                    response = String.valueOf(value);
+                }
+                return response;
+            }
+        },
+        INTEGER("Integer") {
+            @Override
+            Object getValue(Object value) {
+                Object response = value;
+                if (!(value instanceof Integer) && value.toString().matches("^-?\\d+$")) {
+                    response = Integer.parseInt(value.toString());
+                }
+                return response;
+            }
+        },
+        BOOLEAN("Boolean") {
+            @Override
+            Object getValue(Object value) {
+                Object response = value;
+                if (!(value instanceof Boolean) && (value.toString().equalsIgnoreCase("true") || value.toString().equalsIgnoreCase("false"))) {
+                    response = Boolean.parseBoolean(value.toString());
+                }
+                return response;
+            }
+        },
+        DOUBLE("Double") {
+            @Override
+            Object getValue(Object value) {
+                Object response = value;
+                if (!(value instanceof Double) && value.toString().matches("^-?\\d+(?:[.]\\d+)$")) {
+                    response = Double.parseDouble(value.toString());
+                }
+                return response;
+            }
+        };
 
         private String type;
 
         Type(String type) {
             this.type = type;
         }
+
+        abstract Object getValue(Object value);
     }
 }

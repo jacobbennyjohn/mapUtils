@@ -46,6 +46,9 @@
       "sports-property" : [ {
         "@value" : "soccer:2015:129:event-stats:809979",
         "@formal-name" : "compound-key"
+      }, {
+        "@value" : "true",
+        "@formal-name" : "is-match-completed"
       } ]
     },
     "sports-event" : {
