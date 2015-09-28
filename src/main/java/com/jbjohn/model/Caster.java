@@ -43,7 +43,7 @@ public class Caster extends InMap {
             @Override
             Object getValue(Object value) {
                 Object response = value;
-                if (!(value instanceof Integer) && value.toString().matches("^-?\\d+$")) {
+                if (!(value instanceof Integer) && (value instanceof String) && value.toString().matches("^-?\\d+$")) {
                     response = Integer.parseInt(value.toString());
                 }
                 return response;
@@ -53,7 +53,7 @@ public class Caster extends InMap {
             @Override
             Object getValue(Object value) {
                 Object response = value;
-                if (!(value instanceof Boolean) && (value.toString().equalsIgnoreCase("true") || value.toString().equalsIgnoreCase("false"))) {
+                if (!(value instanceof Boolean) && (value instanceof String) && (value.toString().equalsIgnoreCase("true") || value.toString().equalsIgnoreCase("false"))) {
                     response = Boolean.parseBoolean(value.toString());
                 }
                 return response;
@@ -63,7 +63,7 @@ public class Caster extends InMap {
             @Override
             Object getValue(Object value) {
                 Object response = value;
-                if (!(value instanceof Double) && value.toString().matches("^-?\\d+(?:[.]\\d+)$")) {
+                if (!(value instanceof Double) && (value instanceof String) && value.toString().matches("^-?\\d+(?:[.]\\d+)$")) {
                     response = Double.parseDouble(value.toString());
                 }
                 return response;
