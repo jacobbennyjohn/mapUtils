@@ -91,6 +91,15 @@ public class PredicateInMap {
             if (itemMap.containsKey(predicateKey)) {
                 return operator.check(itemMap, predicateKey, predicateValue);
             }
+        } else if (request instanceof Map.Entry) {
+            Map.Entry entry = (Map.Entry) request;
+            if (entry.getKey() instanceof String) {
+                if (entry.getKey().equals(predicateKey)) {
+                    HashMap<String, Object> map = new HashMap<String, Object>();
+                    map.put(entry.getKey().toString(), entry.getValue());
+                    return operator.check(map, predicateKey, predicateValue);
+                }
+            }
         }
         return false;
     }

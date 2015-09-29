@@ -46,7 +46,7 @@ public abstract class InMap {
                 Iterator it = tempMap.entrySet().iterator();
                 while (it.hasNext()) {
                     Map.Entry pair = (Map.Entry) it.next();
-                    if (PredicateInMap.isMatch(map.get(pair.getKey()))) {
+                    if (PredicateInMap.isMatch(pair)) {
                         map.put((String) pair.getKey(), setByPath(map.get(pair.getKey()), newKey));
                     }
                     it.remove();

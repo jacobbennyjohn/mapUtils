@@ -75,4 +75,10 @@ public class MapUtilParseTest {
         Boolean result = Boolean.parseBoolean(MapUtil.get(map, "$.sports-content.sports-metadata.sports-property.[1].@value").toString());
         Assert.assertEquals(expected, result);
     }
+
+    @Test
+    public void testParsePredicate() throws Exception {
+        MapUtil.parse(map, "$.sports-content.sports-metadata.sports-content-codes.sports-content-code.[?@code-type==team].[?@code-key==271].[0]", Caster.Type.INTEGER);
+        System.out.println(MapUtil.get(map, "$.sports-content.sports-metadata.sports-content-codes.sports-content-code.[?@code-type==team].[?@code-key==271].@code-key.[0]").getClass().getName());
+    }
 }
