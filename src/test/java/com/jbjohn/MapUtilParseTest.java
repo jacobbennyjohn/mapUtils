@@ -78,7 +78,9 @@ public class MapUtilParseTest {
 
     @Test
     public void testParsePredicate() throws Exception {
-        MapUtil.parse(map, "$.sports-content.sports-metadata.sports-content-codes.sports-content-code.[?@code-type==team].[?@code-key==271].[0]", Caster.Type.INTEGER);
-        System.out.println(MapUtil.get(map, "$.sports-content.sports-metadata.sports-content-codes.sports-content-code.[?@code-type==team].[?@code-key==271].@code-key.[0]").getClass().getName());
+        Integer expected = 271;
+        MapUtil.parse(map, "$.sports-content.sports-metadata.sports-content-codes.sports-content-code.[?@code-type==team].[?@code-key==271]", Caster.Type.INTEGER);
+        Integer result = Integer.parseInt(MapUtil.get(map, "$.sports-content.sports-metadata.sports-content-codes.sports-content-code.[?@code-type==team].@code-key.[1]").toString());
+        Assert.assertEquals(expected, result);
     }
 }

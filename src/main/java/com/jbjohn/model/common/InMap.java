@@ -40,7 +40,7 @@ public abstract class InMap {
                     map.put((String) pair.getKey(), setByPath(map.get(pair.getKey()), newKey));
                     it.remove();
                 }
-            }  else if (!predicate.equals("")) {
+            } else if (!predicate.equals("")) {
                 PredicateInMap.preProcess(predicate);
                 HashMap<String, Object> tempMap = (HashMap<String, Object>) map.clone();
                 Iterator it = tempMap.entrySet().iterator();
@@ -61,12 +61,24 @@ public abstract class InMap {
             }
         } else {
             path = Generic.trimKey(path);
+            String predicate = Generic.getPredicate(path);
             if (path.equals("*")) {
                 HashMap<String, Object> tempMap = (HashMap<String, Object>) map.clone();
                 Iterator it = tempMap.entrySet().iterator();
                 while (it.hasNext()) {
                     Map.Entry pair = (Map.Entry) it.next();
                     map.put((String) pair.getKey(), operation.getValue(map.get(pair.getKey())));
+                    it.remove();
+                }
+            } else if (!predicate.equals("")) {
+                PredicateInMap.preProcess(predicate);
+                HashMap<String, Object> tempMap = (HashMap<String, Object>) map.clone();
+                Iterator it = tempMap.entrySet().iterator();
+                while (it.hasNext()) {
+                    Map.Entry pair = (Map.Entry) it.next();
+                    if (PredicateInMap.isMatch(pair)) {
+                        map.put((String) pair.getKey(), operation.getValue(map.get(pair.getKey())));
+                    }
                     it.remove();
                 }
             } else {
@@ -113,10 +125,20 @@ public abstract class InMap {
             }
         } else {
             path = Generic.trimKey(path);
+            String predicate = Generic.getPredicate(path);
             if (path.equals("*")) {
                 int counter = 0;
                 for (Object values : map) {
                     map.set(counter, operation.getValue(map.get(counter)));
+                    counter++;
+                }
+            } else if (!predicate.equals("")) {
+                PredicateInMap.preProcess(predicate);
+                int counter = 0;
+                for (Object values : map) {
+                    if (PredicateInMap.isMatch(map.get(counter))) {
+                        map.set(counter, operation.getValue(map.get(counter)));
+                    }
                     counter++;
                 }
             } else {

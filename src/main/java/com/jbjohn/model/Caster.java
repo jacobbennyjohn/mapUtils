@@ -19,54 +19,49 @@ public class Caster extends InMap {
 
     @Override
     public Object getValue(Object value) {
-        Object response = value;
         try {
-            response = type.getValue(value);
+            return type.getValue(value);
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return response;
+        return value;
     }
 
     public enum Type {
         STRING("String") {
             @Override
             Object getValue(Object value) {
-                Object response = value;
                 if (!(value instanceof String)) {
-                    response = String.valueOf(value);
+                    return String.valueOf(value);
                 }
-                return response;
+                return value;
             }
         },
         INTEGER("Integer") {
             @Override
             Object getValue(Object value) {
-                Object response = value;
                 if (!(value instanceof Integer) && (value instanceof String) && value.toString().matches("^-?\\d+$")) {
-                    response = Integer.parseInt(value.toString());
+                    return Integer.parseInt(value.toString());
                 }
-                return response;
+                return value;
             }
         },
         BOOLEAN("Boolean") {
             @Override
             Object getValue(Object value) {
-                Object response = value;
                 if (!(value instanceof Boolean) && (value instanceof String) && (value.toString().equalsIgnoreCase("true") || value.toString().equalsIgnoreCase("false"))) {
-                    response = Boolean.parseBoolean(value.toString());
+                    return Boolean.parseBoolean(value.toString());
                 }
-                return response;
+                return value;
             }
         },
         DOUBLE("Double") {
             @Override
             Object getValue(Object value) {
-                Object response = value;
                 if (!(value instanceof Double) && (value instanceof String) && value.toString().matches("^-?\\d+(?:[.]\\d+)$")) {
-                    response = Double.parseDouble(value.toString());
+                    return Double.parseDouble(value.toString());
                 }
-                return response;
+                return value;
             }
         };
 
