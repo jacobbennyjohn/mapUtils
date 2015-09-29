@@ -30,6 +30,7 @@ public abstract class InMap {
         List<String> stringList = Generic.getKeyList(path);
         if (stringList.size() > 1) {
             String key = Generic.trimKey(stringList.get(0));
+            String predicate = Generic.getPredicate(key);
             String newKey = Generic.newKey(stringList);
             if (key.equals("*")) {
                 HashMap<String, Object> tempMap = (HashMap<String, Object>) map.clone();
@@ -37,6 +38,17 @@ public abstract class InMap {
                 while (it.hasNext()) {
                     Map.Entry pair = (Map.Entry) it.next();
                     map.put((String) pair.getKey(), setByPath(map.get(pair.getKey()), newKey));
+                    it.remove();
+                }
+            }  else if (!predicate.equals("")) {
+                PredicateInMap.preProcess(predicate);
+                HashMap<String, Object> tempMap = (HashMap<String, Object>) map.clone();
+                Iterator it = tempMap.entrySet().iterator();
+                while (it.hasNext()) {
+                    Map.Entry pair = (Map.Entry) it.next();
+                    if (PredicateInMap.isMatch(map.get(pair.getKey()))) {
+                        map.put((String) pair.getKey(), setByPath(map.get(pair.getKey()), newKey));
+                    }
                     it.remove();
                 }
             } else {
