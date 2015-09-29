@@ -42,4 +42,12 @@ public class MapUtilSetTest {
         int result = Integer.parseInt(MapUtil.get(map, "$.sports-content.sports-event.event-metadata.@event-key").toString());
         Assert.assertEquals(expected, result);
     }
+
+    @Test
+    public void testSetPredicate() throws Exception {
+        Integer expected = 300;
+        MapUtil.set(map, "$.sports-content.sports-metadata.sports-content-codes.sports-content-code.[?@code-type==team].[?@code-key==271]", 300);
+        Integer result = Integer.parseInt(MapUtil.get(map, "$.sports-content.sports-metadata.sports-content-codes.sports-content-code.[?@code-type==team].@code-key.[1]").toString());
+        Assert.assertEquals(expected, result);
+    }
 }
