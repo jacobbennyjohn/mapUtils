@@ -30,7 +30,7 @@ public class Predicate {
             ArrayList apply(Map<String, Object> request, String key, String value, ArrayList response) {
                 int valueInt = Generic.getIntValue((String) request.get(key), -1);
                 int predicateInt = Generic.getIntValue(value, -1);
-                if ((valueInt > predicateInt) && (valueInt > -1)) {
+                if ((valueInt > predicateInt) && (predicateInt > -1)) {
                     response.add(request);
                 }
                 return response;

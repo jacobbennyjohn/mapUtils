@@ -1,6 +1,7 @@
 package com.jbjohn.model.common;
 
 import com.jbjohn.utils.Generic;
+import com.jbjohn.utils.PredicateInMap;
 
 import java.util.*;
 
@@ -70,11 +71,21 @@ public abstract class InMap {
         List<String> stringList = Generic.getKeyList(path);
         if (stringList.size() > 1) {
             String key = Generic.trimKey(stringList.get(0));
+            String predicate = Generic.getPredicate(key);
             String newKey = Generic.newKey(stringList);
             if (key.equals("*")) {
                 int counter = 0;
                 for (Object values : map) {
                     map.set(counter, setByPath(map.get(counter), newKey));
+                    counter++;
+                }
+            } else if (!predicate.equals("")) {
+                PredicateInMap.preProcess(predicate);
+                int counter = 0;
+                for (Object values : map) {
+                    if (PredicateInMap.isMatch(map.get(counter))) {
+                        map.set(counter, setByPath(map.get(counter), newKey));
+                    }
                     counter++;
                 }
             } else {
